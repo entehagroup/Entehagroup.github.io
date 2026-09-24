@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- entha group site v1.0 -->
+<script>(function(){var l='en';try{var q=new URLSearchParams(location.search).get('lang');var s=localStorage.getItem('entha-lang');
+l=(q==='fa'||q==='en')?q:((s==='fa'||s==='en')?s:'en');}catch(e){}var h=document.documentElement;h.lang=l;h.dir=l==='fa'?'rtl':'ltr';})();</script>
+<title>Entha Group — Mechanical Design, Fabrication & Robotics</title>
+<meta name="description" content="Entha Group is a three-engineer team designing and building industrial machines, robots, welded structures and custom equipment — from concept to fabrication, quality control and delivery.">
+<link rel="canonical" href="https://enthagroup.github.io/">
+<link rel="alternate" hreflang="en" href="https://enthagroup.github.io/?lang=en">
+<link rel="alternate" hreflang="fa" href="https://enthagroup.github.io/?lang=fa">
+<link rel="alternate" hreflang="x-default" href="https://enthagroup.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Entha Group — Mechanical Design, Fabrication & Robotics">
+<meta property="og:description" content="Entha Group is a three-engineer team designing and building industrial machines, robots, welded structures and custom equipment — from concept to fabrication, quality control and delivery.">
+<meta property="og:url" content="https://enthagroup.github.io/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:image" content="https://enthagroup.github.io/cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#16191D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23B9713C'/%3E%3Cpath d='M16 6.5l8.2 4.75v9.5L16 25.5l-8.2-4.75v-9.5z' fill='none' stroke='white' stroke-width='2.2' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='3.4' fill='none' stroke='white' stroke-width='2.2'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Entha Group", "alternateName": ["گروه فنی مهندسی انتها", "Entha"], "url": "https://enthagroup.github.io/", "logo": "https://enthagroup.github.io/cover.jpg", "email": "Nasiri2752@Gmail.com", "telephone": "+989962233898", "description": "Entha Group is a three-engineer team designing and building industrial machines, robots, welded structures and custom equipment — from concept to fabrication, quality control and delivery.", "areaServed": "IR", "address": {"@type": "PostalAddress", "addressLocality": "Tehran", "addressCountry": "IR"}, "member": [{"@type": "Person", "name": "Hassan Nasiri Khonsari", "alternateName": "حسن نصیری خونساری", "sameAs": ["https://www.linkedin.com/in/hassan-nasiri-khonsari-44bb49198/"], "jobTitle": "Technical & Design Director"}, {"@type": "Person", "name": "Alireza Pirhaji", "alternateName": "علیرضا پیرحاجی", "sameAs": ["https://www.linkedin.com/in/alireza-pirhaji-9a0787139/"], "jobTitle": "Manufacturing & Quality Lead"}, {"@type": "Person", "name": "Seyed Mostafa Banihashemi", "alternateName": "سید مصطفی بنی‌هاشمی", "sameAs": ["https://www.linkedin.com/in/mostafa-banihashemi/"], "jobTitle": "Project & R&D Lead"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16191D; --navy2:#1E232A; --text:#1E2228; --muted:#5C6169; --faint:#98999C;
+  --soft:#F8F6F3; --line:#ECE7E1; --line2:#DAD3CA; --white:#fff;
+  --accent:#B9713C; --accent-d:#94582B; --accent-btn:#A5622F; --accent2:#E09A63; --tint:#FAEFE6;
+  --steel:#4A5B6B; --steel-tint:#EEF2F5;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+section[id], header[id]{scroll-margin-top:74px;}
+body{font-family:'Vazirmatn',system-ui,sans-serif; color:var(--text); background:var(--white); line-height:1.85;}
+html[lang=en] body{line-height:1.7;}
+a{color:inherit; text-decoration:none;}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+html[lang=en] [data-l=fa], html[lang=fa] [data-l=en]{display:none!important;}
+p{text-align:justify; hyphens:auto;}
+.ltr{direction:ltr; unicode-bidi:isolate;}
+
+/* nav */
+nav{position:sticky; top:0; z-index:60; background:rgba(22,25,29,0.94); backdrop-filter:blur(10px); border-bottom:1px solid rgba(255,255,255,0.08);}
+nav .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 24px;}
+.brand{display:flex; align-items:center; gap:10px; color:#fff; font-weight:800; font-size:15.5px; white-space:nowrap;}
+.brand .mk{width:30px; height:30px; border-radius:9px; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center;}
+.menu{display:flex; gap:4px; align-items:center;}
+.menu a{color:#C9CDD2; font-size:14px; padding:7px 12px; border-radius:9px; transition:.2s; font-weight:500; white-space:nowrap;}
+.menu a:hover{color:#fff; background:rgba(255,255,255,0.08);}
+.menu a.active:not(.nav-cta){color:var(--accent2); background:rgba(185,113,60,0.18);}
+.nav-cta{background:var(--accent-btn); color:#fff!important; font-weight:700;}
+.nav-cta:hover{background:var(--accent)!important;}
+.tools{display:flex; gap:8px; align-items:center;}
+.lang{display:flex; align-items:center; gap:6px; background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.22); border-radius:20px; padding:6px 12px; font:600 13px 'Vazirmatn',sans-serif; cursor:pointer; transition:.2s;}
+.lang:hover{background:var(--accent-btn); border-color:var(--accent-btn);}
+.nav-phone{display:flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.22); color:#fff;}
+.nav-phone:hover{background:var(--accent-btn); border-color:var(--accent-btn);}
+
+/* hero */
+.hero{background:var(--navy); color:#fff; position:relative; overflow:hidden;}
+.hero .cover{position:relative; aspect-ratio:2172/724; max-width:1920px; margin:0 auto; overflow:hidden;}
+.hero .cover img{width:100%; height:100%; object-fit:cover; object-position:center; display:block;}
+.hero .cover::after{content:''; position:absolute; inset:0; background:linear-gradient(to bottom,rgba(22,25,29,0) 55%,rgba(22,25,29,0.85) 88%,var(--navy) 100%);}
+@media(min-width:1921px){ .hero .cover{-webkit-mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent); mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent);} }
+.hero .profile{display:grid; grid-template-columns:1fr auto; gap:56px; align-items:center; padding:36px 24px 80px; position:relative; z-index:2;}
+.eyebrow{display:inline-block; background:rgba(185,113,60,0.18); color:var(--accent2); padding:6px 16px; border-radius:30px; font-size:13px; font-weight:600; margin-bottom:18px;}
+.hero h1{font-size:clamp(32px,5vw,50px); font-weight:800; line-height:1.25; letter-spacing:-1px; margin-bottom:10px;}
+html[lang=en] .hero h1{letter-spacing:-1.5px;}
+.hero .headline{font-size:clamp(18px,2.2vw,22px); font-weight:600; margin-bottom:18px; line-height:1.6; text-align:start;}
+.hero .headline b{color:var(--accent2); font-weight:700;}
+.hero .lead{font-size:16.5px; color:#B9BEC4; max-width:560px; margin-bottom:30px;}
+.btns{display:flex; gap:10px; flex-wrap:wrap;}
+.btn-ghost{font-size:13.5px;}
+.btn{display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:12px; font-weight:700; font-size:14.5px; transition:.2s;}
+.btn-gold{background:var(--accent-btn); color:#fff;}
+.btn-gold:hover{background:var(--accent); transform:translateY(-2px);}
+.btn-ghost{background:rgba(255,255,255,0.08); color:#fff; border:1px solid rgba(255,255,255,0.2);}
+.btn-ghost:hover{background:rgba(255,255,255,0.16); transform:translateY(-2px);}
+.trio{display:flex; align-items:center; justify-content:center; position:relative; padding:12px;}
+.trio::before{content:''; position:absolute; inset:0; border-radius:200px; border:1.5px solid rgba(185,113,60,0.5);}
+.trio img{width:150px; height:150px; border-radius:50%; object-fit:cover; border:5px solid var(--navy); box-shadow:0 26px 50px -24px rgba(0,0,0,0.8); position:relative; background:var(--navy2);}
+.trio img + img{margin-inline-start:-34px;}
+.trio img:nth-child(1){z-index:3;} .trio img:nth-child(2){z-index:2;} .trio img:nth-child(3){z-index:1;}
+
+/* sections */
+section.block{padding:64px 0;}
+.head{text-align:center; max-width:660px; margin:0 auto 44px;}
+.head .kk{color:var(--accent-d); font-weight:700; font-size:14px; letter-spacing:1px; margin-bottom:10px;}
+html[lang=en] .head .kk{text-transform:uppercase; font-size:12.5px; letter-spacing:2px;}
+.head h2{font-size:32px; font-weight:800; letter-spacing:-0.5px;}
+.head p{color:var(--muted); margin-top:12px; text-align:justify; text-align-last:center;}
+.reveal{opacity:0; transform:translateY(26px); transition:.7s cubic-bezier(.2,.7,.3,1);}
+.reveal.in{opacity:1; transform:none;}
+.alt{background:var(--soft);}
+
+/* avatars */
+.who{display:inline-flex; align-items:center; flex-shrink:0;}
+.who .av{width:28px; height:28px; border-radius:50%; object-fit:cover; border:2px solid #fff; box-shadow:0 2px 6px -2px rgba(0,0,0,0.35); background:var(--soft);}
+.who .av + .av{margin-inline-start:-9px;}
+.who.lg .av{width:34px; height:34px;}
+
+/* about */
+.about{display:grid; grid-template-columns:1.15fr 1fr; gap:44px; align-items:center;}
+.about p{color:#3F454C; margin-bottom:16px;}
+.facts{background:var(--soft); border-radius:18px; padding:26px 28px; border:1px solid var(--line);}
+.fact{display:flex; justify-content:space-between; gap:16px; padding:12px 0; border-bottom:1px solid var(--line); font-size:15px;}
+.fact:last-child{border:none;}
+.fact .k{color:var(--muted); white-space:nowrap;} .fact .v{font-weight:600; text-align:end;}
+
+/* team */
+.t-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+.member{background:#fff; border:1px solid var(--line); border-radius:20px; padding:26px 24px; text-align:center; transition:.25s; display:flex; flex-direction:column;}
+.member:hover{transform:translateY(-5px); box-shadow:0 22px 48px -22px rgba(22,25,29,0.28); border-color:var(--accent);}
+.member .ph{width:124px; height:124px; border-radius:50%; object-fit:cover; margin:0 auto 16px; display:block; box-shadow:0 0 0 4px #fff,0 0 0 5.5px var(--line2);}
+.member h3{font-size:18px; font-weight:800; line-height:1.4;}
+.member .role{display:inline-block; margin:8px auto 12px; background:var(--tint); color:var(--accent-d); font-size:13px; font-weight:700; padding:4px 13px; border-radius:20px;}
+.member .edu{font-size:13px; color:var(--muted); margin-bottom:12px; line-height:1.75; text-align:center;}
+.member .bio{font-size:14px; color:#3F454C; flex:1;}
+.member .li{display:inline-flex; align-items:center; gap:7px; margin-top:16px; align-self:center; font-size:13.5px; font-weight:600; color:var(--steel); border:1px solid var(--line2); padding:7px 15px; border-radius:10px; transition:.2s;}
+.member .li:hover{background:var(--navy); color:#fff; border-color:var(--navy);}
+
+/* services & honors cards */
+.h-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+.card{background:#fff; border-radius:18px; padding:24px; border:1px solid var(--line); transition:.25s; position:relative;}
+.card:hover{transform:translateY(-5px); box-shadow:0 22px 48px -22px rgba(22,25,29,0.28); border-color:var(--accent);}
+.card .ico{width:46px; height:46px; border-radius:13px; background:var(--tint); color:var(--accent-d); display:flex; align-items:center; justify-content:center; margin-bottom:15px;}
+.card .ico svg{width:23px; height:23px;}
+.card h3{font-size:16.5px; font-weight:700; margin-bottom:7px; line-height:1.5;}
+.card p{color:var(--muted); font-size:14px;}
+.card .who{position:absolute; top:22px; inset-inline-end:22px;}
+.card.top{background:linear-gradient(160deg,#fff 0%,var(--tint) 100%); border:1.5px solid rgba(185,113,60,0.45); box-shadow:0 18px 40px -26px rgba(185,113,60,0.6);}
+.card.top .ico{background:var(--accent-btn); color:#fff;}
+.card.top::after{content:''; position:absolute; top:0; right:24px; left:24px; height:3px; border-radius:0 0 3px 3px; background:var(--accent-btn);}
+
+/* publications */
+.pub{max-width:780px; margin:0 auto; background:#fff; border:1px solid var(--line); border-radius:18px; padding:30px 32px; position:relative; overflow:hidden;}
+.pub::before{content:''; position:absolute; top:0; inset-inline-start:0; width:6px; height:100%; background:linear-gradient(var(--accent),var(--accent2));}
+.pub .top{display:flex; justify-content:space-between; align-items:center; gap:12px;}
+.jbadge{display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:#fff; padding:7px 14px; border-radius:9px; font-size:13px; font-weight:600; direction:ltr;}
+.jbadge b{color:var(--accent2);}
+.ptitle{font-size:19px; font-weight:700; margin:16px 0 8px; line-height:1.55; direction:ltr; text-align:left;}
+.pub .psum{color:#3F454C; margin-bottom:14px;}
+.authors{font-size:13.5px; color:var(--muted); direction:ltr; text-align:left;}
+.authors b{color:var(--navy);}
+.prole{font-size:14px; background:var(--soft); border-radius:10px; padding:12px 16px; margin:16px 0;}
+.pmeta{display:flex; gap:18px; flex-wrap:wrap; font-size:13px; color:var(--muted); margin-bottom:20px;}
+.pmeta b{color:var(--accent-d);}
+.plink{display:inline-block; background:var(--navy); color:#fff; padding:11px 22px; border-radius:11px; font-weight:600; font-size:14px; transition:.2s;}
+.plink:hover{background:var(--navy2); transform:translateY(-2px);}
+.plist{max-width:780px; margin:18px auto 0; list-style:none;}
+.plist li{display:flex; gap:14px; align-items:flex-start; background:#fff; border:1px solid var(--line); border-radius:14px; padding:15px 18px; margin-bottom:10px;}
+.plist .pt{font-size:14.5px; font-weight:600; direction:ltr; text-align:left; line-height:1.55;}
+.plist .pv{font-size:13px; color:var(--muted); direction:ltr; text-align:left; margin-top:3px;}
+.plist .pv a{color:var(--accent-d); font-weight:600;}
+.plist .body{flex:1; min-width:0;}
+
+/* skills */
+.skill-cat{margin-bottom:26px; text-align:center;}
+.skill-cat h3{font-size:16px; color:var(--navy); margin-bottom:13px; display:flex; align-items:center; justify-content:center; gap:9px;}
+.skill-cat h3::before{content:''; width:8px; height:8px; border-radius:50%; background:var(--accent);}
+.chips{display:flex; flex-wrap:wrap; gap:9px; justify-content:center;}
+.chip{background:var(--soft); border:1px solid var(--line); padding:8px 15px; border-radius:11px; font-size:14px; font-weight:500; transition:.2s;}
+.chip:hover{background:var(--navy); color:#fff; border-color:var(--navy); transform:translateY(-2px);}
+
+/* experience */
+.timeline{max-width:760px; margin:0 auto; position:relative; padding-inline-start:30px;}
+.timeline::before{content:''; position:absolute; inset-inline-start:7px; top:8px; bottom:8px; width:2px; background:var(--line);}
+.tl{position:relative; padding-bottom:30px;}
+.tl::before{content:''; position:absolute; inset-inline-start:-30px; top:7px; width:15px; height:15px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px #fff,0 0 0 6px var(--line);}
+.tl.team::before{background:var(--navy);}
+.tl .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+.tl .when{color:var(--accent-d); font-weight:700; font-size:14px;}
+.tl h3{font-size:17.5px; font-weight:700; margin:5px 0 2px; line-height:1.5;}
+.tl .org{color:var(--muted); font-size:14px;}
+.tl .d{color:var(--muted); font-size:14.5px; margin-top:6px;}
+
+/* project list */
+.p-list{max-width:780px; margin:0 auto; list-style:none;}
+.prow{display:flex; align-items:center; gap:16px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin-bottom:12px; cursor:pointer; transition:.2s;}
+html[dir=rtl] .prow:hover{transform:translateX(-5px);} html[dir=ltr] .prow:hover{transform:translateX(5px);}
+.prow:hover{border-color:var(--accent); box-shadow:0 16px 36px -20px rgba(22,25,29,0.3);}
+.prow .pn{font-weight:800; color:var(--accent-d); font-size:18px; min-width:30px;}
+.prow .pthumb{width:70px; height:54px; object-fit:contain; background:#fff; border:1px solid var(--line); border-radius:9px; flex-shrink:0;}
+.prow .pinfo{flex:1; min-width:0;}
+.prow .pt-title{font-weight:700; font-size:16px; line-height:1.5;}
+.prow .pt-sub{color:var(--muted); font-size:13px;}
+.prow .pchev{color:var(--accent-d); font-weight:700; font-size:14px; white-space:nowrap;}
+
+/* modal */
+.pmodal{position:fixed; inset:0; background:rgba(22,25,29,0.72); backdrop-filter:blur(4px); display:none; align-items:center; justify-content:center; padding:20px; z-index:200;}
+.pmodal.show{display:flex;}
+.pcard{background:#fff; border-radius:20px; max-width:640px; width:100%; max-height:90vh; overflow-y:auto; position:relative; animation:pop .3s ease;}
+@keyframes pop{from{opacity:0; transform:scale(.95) translateY(10px);} to{opacity:1; transform:none;}}
+.pclose{position:absolute; top:14px; inset-inline-end:14px; width:36px; height:36px; border:none; border-radius:50%; background:rgba(0,0,0,0.45); color:#fff; font-size:22px; cursor:pointer; z-index:3;}
+.pm-media{position:relative; background:#fff; border-radius:20px 20px 0 0;}
+#pm-img{width:100%; height:min(52vh,440px); object-fit:contain; background:#fff; border-radius:20px 20px 0 0; display:block;}
+#pm-cap{position:absolute; bottom:12px; inset-inline-start:14px; background:rgba(22,25,29,0.78); color:#fff; font-size:12.5px; font-weight:600; padding:5px 11px; border-radius:8px;}
+#pm-cap:empty{display:none;}
+#pm-thumbs{display:flex; gap:10px; padding:12px 24px 0; flex-wrap:wrap;}
+#pm-thumbs:empty{display:none;}
+#pm-thumbs button{width:74px; height:58px; padding:3px; background:#fff; border:1.5px solid var(--line); border-radius:10px; cursor:pointer;}
+#pm-thumbs button img{width:100%; height:100%; object-fit:contain; display:block;}
+#pm-thumbs button.on{border-color:var(--accent);}
+.pbody{padding:24px 28px 30px;}
+.pm-top{display:flex; justify-content:space-between; align-items:center; gap:10px;}
+#pm-year{color:var(--accent-d); font-weight:700; font-size:13px;}
+#pm-title{font-size:23px; font-weight:800; margin:6px 0 14px; line-height:1.4;}
+#pm-desc p{color:#3F454C; margin-bottom:14px;}
+#pm-tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;}
+#pm-tags span{background:var(--soft); border:1px solid var(--line); color:var(--navy); font-size:13px; padding:6px 13px; border-radius:9px; font-weight:500;}
+#pm-who{display:flex; flex-wrap:wrap; gap:14px; margin-top:18px; padding-top:16px; border-top:1px solid var(--line);}
+#pm-who span{display:inline-flex; align-items:center; gap:8px; font-size:13.5px; font-weight:600; color:var(--text);}
+#pm-who img{width:30px; height:30px; border-radius:50%; object-fit:cover;}
+
+/* contact */
+.contact{background:radial-gradient(120% 140% at 80% 0%,#262B31 0%,var(--navy) 100%); color:#fff; text-align:center;}
+.contact h2{font-size:34px; font-weight:800; margin-bottom:14px;}
+.contact > .wrap > p{color:#B9BEC4; max-width:500px; margin:0 auto 30px; text-align:justify; text-align-last:center;}
+.cform{max-width:520px; margin:6px auto 30px; text-align:start;}
+.cf-row{display:flex; gap:12px; margin-bottom:12px;}
+.cform input,.cform textarea{width:100%; padding:13px 16px; border-radius:11px; border:1px solid rgba(255,255,255,0.18); background:rgba(255,255,255,0.08); color:#fff; font-family:inherit; font-size:15px; outline:none; transition:.2s;}
+.cform input::placeholder,.cform textarea::placeholder{color:#A9AEB5;}
+.cform input:focus,.cform textarea:focus{border-color:var(--accent); background:rgba(255,255,255,0.13);}
+.cform textarea{resize:vertical; margin-bottom:12px;}
+.cf-btn{width:100%; padding:14px; border:none; border-radius:11px; background:var(--accent); color:#fff; font-weight:700; font-size:15px; cursor:pointer; transition:.2s; font-family:inherit;}
+.cf-btn:hover{background:var(--accent2); color:var(--navy); transform:translateY(-2px);}
+.cf-btn:disabled{opacity:.6; cursor:default; transform:none;}
+.cf-status{margin-top:12px; font-size:14px; min-height:20px;}
+.cf-status.ok{color:#7ee0a8;} .cf-status.err{color:#ff9b8a;}
+.c-other{color:#A9AEB5; font-size:14px; margin-bottom:6px; text-align:center!important;}
+.c-links{display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:14px;}
+.c-links a{display:flex; align-items:center; gap:8px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.16); padding:13px 22px; border-radius:12px; font-size:14px; font-weight:500; transition:.2s;}
+.c-links a:hover{background:rgba(255,255,255,0.16); transform:translateY(-2px);}
+.c-links a span{direction:ltr; unicode-bidi:isolate;}
+footer{background:var(--navy); color:#8F959C; text-align:center; padding:26px; font-size:13px; border-top:1px solid rgba(255,255,255,0.08);}
+.fab-phone{display:none;}
+
+@media(max-width:980px){ .menu a:not(.nav-cta){padding:7px 8px; font-size:13px;} }
+@media(max-width:860px){
+  nav .wrap{flex-wrap:wrap; padding:10px 16px; gap:10px;}
+  .menu{order:3; width:100%; overflow-x:auto; scrollbar-width:none; -webkit-overflow-scrolling:touch;}
+  .menu::-webkit-scrollbar{display:none;}
+  .nav-phone{display:none;}
+  .hero .profile{grid-template-columns:1fr; gap:22px; padding:24px 20px 56px; text-align:center; justify-items:center;}
+  .hero .trio{order:-1;} .trio img{width:104px; height:104px;} .trio img + img{margin-inline-start:-24px;}
+  .hero .headline{text-align:center;} .hero .lead{text-align:justify; text-align-last:center; margin-inline:auto;}
+  .btns{justify-content:center;}
+  .about,.t-grid,.h-grid{grid-template-columns:1fr;}
+  .fab-phone{display:flex; align-items:center; justify-content:center; position:fixed; bottom:18px; inset-inline-end:18px; width:54px; height:54px; border-radius:50%; background:var(--accent-btn); color:#fff; box-shadow:0 10px 24px -8px rgba(0,0,0,0.55); z-index:90;}
+}
+@media(max-width:560px){ .cf-row{flex-direction:column;} .prow{gap:11px; padding:12px 13px;} .prow .pn{display:none;} .pub{padding:24px 20px;} }
+@media(prefers-reduced-motion:reduce){ *{transition:none!important; animation:none!important;} .reveal{opacity:1; transform:none;} }
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a href="#top" class="brand"><span class="mk"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.6l8.1 4.7v9.4L12 21.4 3.9 16.7V7.3z"/><circle cx="12" cy="12" r="3.4"/></svg></span><span data-l="en">Entha Group</span><span data-l="fa">گروه فنی مهندسی انتها</span></a>
+  <div class="menu"><a href="#about"><span data-l="en">About</span><span data-l="fa">درباره</span></a><a href="#team"><span data-l="en">Team</span><span data-l="fa">تیم</span></a><a href="#services"><span data-l="en">Services</span><span data-l="fa">خدمات</span></a><a href="#projects"><span data-l="en">Projects</span><span data-l="fa">پروژه‌ها</span></a><a href="#honors"><span data-l="en">Honors</span><span data-l="fa">افتخارات</span></a><a href="#publications"><span data-l="en">Research</span><span data-l="fa">پژوهش</span></a><a href="#skills"><span data-l="en">Skills</span><span data-l="fa">مهارت‌ها</span></a><a href="#experience"><span data-l="en">Experience</span><span data-l="fa">سوابق</span></a><a href="#contact" class="nav-cta"><span data-l="en">Contact</span><span data-l="fa">تماس</span></a></div>
+  <div class="tools">
+    <button class="lang" id="langBtn" type="button"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-l="en">فارسی</span><span data-l="fa">English</span></button>
+    <a href="tel:+989962233898" class="nav-phone" aria-label="Phone"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+  </div>
+</div></nav>
+<header class="hero" id="top">
+  <div class="cover"><picture><source srcset="cover.webp" type="image/webp">
+    <img src="cover.jpg" width="2172" height="724" data-alt-en="Machines and robots designed and built by the team" data-alt-fa="نمونه‌ای از ماشین‌ها و ربات‌هایی که طراحی و ساخته‌ایم" alt="Machines and robots designed and built by the team" fetchpriority="high"></picture></div>
+  <div class="wrap profile">
+    <div class="intro">
+      <span class="eyebrow"><span data-l="en">Mechanical design · Fabrication · Robotics</span><span data-l="fa">طراحی مکانیک · ساخت · رباتیک</span></span>
+      <h1><span data-l="en">Entha Group</span><span data-l="fa">گروه فنی مهندسی انتها</span></h1>
+      <p class="headline"><span data-l="en">Industrial robots, <b>custom machinery</b> and automation — designed and built by one team.</span><span data-l="fa">ربات‌های صنعتی، <b>ماشین‌آلات سفارشی</b> و اتوماسیون؛ طراحی و ساخت در یک تیم.</span></p>
+      <p class="lead"><span data-l="en">Three mechanical engineers from Sharif, IUST, K. N. Toosi and Tarbiat Modares universities. We take a project from concept design through fabrication, quality control and commissioning.</span><span data-l="fa">سه مهندس مکانیک از دانشگاه‌های صنعتی شریف، علم و صنعت، خواجه نصیر و تربیت مدرس. پروژه را از طراحی مفهومی تا ساخت، کنترل کیفیت و راه‌اندازی پیش می‌بریم.</span></p>
+      <div class="btns">
+        <a class="btn btn-gold" href="#projects"><span data-l="en">View projects</span><span data-l="fa">مشاهده‌ی پروژه‌ها</span></a>
+        <a class="btn btn-ghost" href="entha-resume-en-v1.0.pdf" download><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-l="en">Resume · English (PDF)</span><span data-l="fa">رزومه‌ی انگلیسی (<bdi>PDF</bdi>)</span></a>
+        <a class="btn btn-ghost" href="entha-resume-fa-v1.0.pdf" download><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-l="en">Resume · Persian (PDF)</span><span data-l="fa">رزومه‌ی فارسی (<bdi>PDF</bdi>)</span></a>
+      </div>
+    </div>
+    <div class="trio">
+      <img src="hassan-720.webp" width="720" height="720" data-p="h" alt="">
+      <img src="alireza.webp" width="380" height="380" data-p="a" alt="">
+      <img src="mostafa.webp" width="354" height="354" data-p="m" alt="">
+    </div>
+  </div>
+</header>
+<section class="block" id="about"><div class="wrap">
+  <div class="head reveal"><div class="kk"><span data-l="en">Who we are</span><span data-l="fa">معرفی</span></div><h2><span data-l="en">About the group</span><span data-l="fa">درباره‌ی گروه</span></h2></div>
+  <div class="about"><div class="reveal"><p><span data-l="en">Entha Group is a team of three mechanical engineers working on the design and fabrication of industrial machines, robots and custom equipment. Our work covers the whole chain: concept and detailed design, engineering analysis, fabrication and assembly, quality control and commissioning.</span><span data-l="fa">گروه فنی مهندسی انتها تیمی سه‌نفره از مهندسان مکانیک است که روی طراحی و ساخت ماشین‌آلات صنعتی، ربات و تجهیزات سفارشی کار می‌کند. کار ما کل زنجیره را پوشش می‌دهد: طراحی مفهومی و تفصیلی، تحلیل مهندسی، ساخت و مونتاژ، کنترل کیفیت و راه‌اندازی.</span></p><p><span data-l="en">Our backgrounds complement each other: machine and robot design, mechatronics and automation; manufacturing, composites and quality control; and mechanism design, control and medical robotics. Between us we hold degrees from four of Iran's leading technical universities.</span><span data-l="fa">تخصص‌های ما مکمل یکدیگرند: طراحی ماشین و ربات، مکاترونیک و اتوماسیون؛ ساخت و تولید، کامپوزیت و کنترل کیفیت؛ و طراحی مکانیزم، کنترل و رباتیک پزشکی. مدرک‌های ما از چهار دانشگاه صنعتی برتر کشور است.</span></p><p><span data-l="en">Our work has been recognised by the Alborz Elite Prize, the Khwarizmi Youth Festival, the Iran Industrial Design Festival and Sharif Science and Technology Park, and published in Scientific Reports and the International Journal of Mechanical Sciences.</span><span data-l="fa">کارهای ما در جایزه‌ی البرز نخبگانی، جشنواره‌ی جوان خوارزمی، جشنواره‌ی طراحی صنعتی ایران و پارک علم و فناوری شریف برگزیده شده و در مجله‌های <bdi>Scientific Reports</bdi> و <bdi>International Journal of Mechanical Sciences</bdi> منتشر شده است.</span></p></div><div class="facts reveal"><div class="fact"><span class="k"><span data-l="en">Based in</span><span data-l="fa">مستقر در</span></span><span class="v"><span data-l="en">Tehran & Isfahan, Iran</span><span data-l="fa">تهران و اصفهان</span></span></div><div class="fact"><span class="k"><span data-l="en">Team</span><span data-l="fa">تیم</span></span><span class="v"><span data-l="en">3 mechanical engineers</span><span data-l="fa">سه مهندس مکانیک</span></span></div><div class="fact"><span class="k"><span data-l="en">Universities</span><span data-l="fa">دانشگاه‌ها</span></span><span class="v"><span data-l="en">Sharif · IUST · KNTU · TMU</span><span data-l="fa">شریف · علم و صنعت · خواجه نصیر · تربیت مدرس</span></span></div><div class="fact"><span class="k"><span data-l="en">Scope</span><span data-l="fa">دامنه‌ی کار</span></span><span class="v"><span data-l="en">Design → build → QC → delivery</span><span data-l="fa">طراحی، ساخت، کنترل کیفیت، تحویل</span></span></div><div class="fact"><span class="k"><span data-l="en">Status</span><span data-l="fa">وضعیت</span></span><span class="v"><span data-l="en">Open to new projects</span><span data-l="fa">آماده‌ی پذیرش پروژه</span></span></div></div></div>
+</div></section>
+<section class="block alt" id="team"><div class="wrap">
+  <div class="head reveal"><div class="kk"><span data-l="en">Team</span><span data-l="fa">اعضای تیم</span></div><h2><span data-l="en">Three complementary specialists</span><span data-l="fa">سه تخصص مکمل</span></h2><p><span data-l="en">Each project is led by the member whose field it falls in, with the others on design review, fabrication and testing.</span><span data-l="fa">هر پروژه را عضوی هدایت می‌کند که در حوزه‌ی تخصص اوست و دو نفر دیگر در بازبینی طراحی، ساخت و آزمون همراهی می‌کنند.</span></p></div>
+  <div class="t-grid"><div class="member reveal">
+  <img class="ph" src="hassan-720.webp" data-p="h" alt="" loading="lazy" width="124" height="124">
+  <h3><span data-l="en">Hassan Nasiri Khonsari</span><span data-l="fa">حسن نصیری خونساری</span></h3>
+  <span class="role"><span data-l="en">Technical & Design Director</span><span data-l="fa">مدیر فنی و طراحی</span></span>
+  <p class="edu"><span data-l="en">MSc Applied Design, Sharif University of Technology · BSc Mechanical Engineering, IUST</span><span data-l="fa">کارشناسی ارشد طراحی کاربردی، دانشگاه صنعتی شریف · کارشناسی مکانیک، دانشگاه علم و صنعت ایران</span></p>
+  <p class="bio"><span data-l="en">Mechanical design of industrial machines and robots, carried through fabrication, assembly and commissioning. Laureate of the 64th Alborz Elite Prize and twice second-place winner at the Khwarizmi Youth Festival.</span><span data-l="fa">طراحی مکانیکی ماشین‌ها و ربات‌های صنعتی و پیگیری ساخت، مونتاژ و راه‌اندازی آن‌ها. برگزیده‌ی شصت‌وچهارمین جایزه‌ی البرز و دو بار دارنده‌ی مقام دوم جشنواره‌ی جوان خوارزمی.</span></p>
+  <a class="li" href="https://www.linkedin.com/in/hassan-nasiri-khonsari-44bb49198/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><span data-l="en">LinkedIn</span><span data-l="fa">لینکدین</span></a>
+</div><div class="member reveal">
+  <img class="ph" src="alireza.webp" data-p="a" alt="" loading="lazy" width="124" height="124">
+  <h3><span data-l="en">Alireza Pirhaji</span><span data-l="fa">علیرضا پیرحاجی</span></h3>
+  <span class="role"><span data-l="en">Manufacturing & Quality Lead</span><span data-l="fa">سرپرست ساخت و کنترل کیفیت</span></span>
+  <p class="edu"><span data-l="en">MSc Manufacturing Engineering, Tarbiat Modares University · BSc Mechanical Engineering, Sharif University of Technology</span><span data-l="fa">کارشناسی ارشد ساخت و تولید، دانشگاه تربیت مدرس · کارشناسی مکانیک، دانشگاه صنعتی شریف</span></p>
+  <p class="bio"><span data-l="en">Fabrication of industrial parts and structures, composites and 3D printing. Led production of the postal sorting robots and now runs contract fabrication, quality control and assembly of industrial part sets.</span><span data-l="fa">ساخت قطعات و سازه‌های صنعتی، کامپوزیت و چاپ سه‌بعدی. سرپرستی تولید ربات‌های سورتر پستی را بر عهده داشته و اکنون پیمانکاری ساخت، کنترل کیفی و مونتاژ مجموعه‌های صنعتی را انجام می‌دهد.</span></p>
+  <a class="li" href="https://www.linkedin.com/in/alireza-pirhaji-9a0787139/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><span data-l="en">LinkedIn</span><span data-l="fa">لینکدین</span></a>
+</div><div class="member reveal">
+  <img class="ph" src="mostafa.webp" data-p="m" alt="" loading="lazy" width="124" height="124">
+  <h3><span data-l="en">Seyed Mostafa Banihashemi</span><span data-l="fa">سید مصطفی بنی‌هاشمی</span></h3>
+  <span class="role"><span data-l="en">Project & R&D Lead</span><span data-l="fa">سرپرست پروژه و تحقیق و توسعه</span></span>
+  <p class="edu"><span data-l="en">MSc Applied Design (Dynamics, Control & Robotics), Sharif University of Technology · BSc Mechanical Engineering, K. N. Toosi University</span><span data-l="fa">کارشناسی ارشد طراحی کاربردی (دینامیک، کنترل و رباتیک)، دانشگاه صنعتی شریف · کارشناسی مکانیک، دانشگاه خواجه نصیر</span></p>
+  <p class="bio"><span data-l="en">Mechanism design, control and medical robotics. Handles estimating, procurement and fabrication follow-up for the group's projects. Named top researcher of Sharif's mechanical engineering faculty in 2025.</span><span data-l="fa">طراحی مکانیزم، کنترل و رباتیک پزشکی. برآورد و قیمت‌گذاری، تأمین متریال و پیگیری ساخت پروژه‌های گروه با اوست. پژوهشگر برتر دانشکده‌ی مهندسی مکانیک شریف در سال ۱۴۰۴.</span></p>
+  <a class="li" href="https://www.linkedin.com/in/mostafa-banihashemi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><span data-l="en">LinkedIn</span><span data-l="fa">لینکدین</span></a>
+</div></div>
+</div></section>
+<section class="block" id="services"><div class="wrap">
+  <div class="head reveal"><div class="kk"><span data-l="en">Services</span><span data-l="fa">خدمات</span></div><h2><span data-l="en">What we build</span><span data-l="fa">چه چیزی می‌سازیم</span></h2><p><span data-l="en">Typical projects we take on, from a single custom machine to series parts.</span><span data-l="fa">نمونه‌ای از پروژه‌هایی که می‌پذیریم؛ از یک دستگاه سفارشی تا قطعات سری.</span></p></div>
+  <div class="h-grid"><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div><h3><span data-l="en">Machines & mechanisms</span><span data-l="fa">ماشین و مکانیزم</span></h3><p><span data-l="en">Custom machines from concept design to fabrication, assembly and commissioning.</span><span data-l="fa">دستگاه سفارشی از طراحی مفهومی تا ساخت، مونتاژ و راه‌اندازی.</span></p></div><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="7" width="14" height="11" rx="3"/><path d="M12 7V4M9 12h.01M15 12h.01M9 15h6"/><circle cx="12" cy="3.5" r="1"/></svg></div><h3><span data-l="en">Robotics & automation</span><span data-l="fa">رباتیک و اتوماسیون</span></h3><p><span data-l="en">Industrial and service robots, PLC and HMI, electronics and motion control.</span><span data-l="fa">ربات صنعتی و خدماتی، <bdi>PLC</bdi> و <bdi>HMI</bdi>، الکترونیک و کنترل حرکت.</span></p></div><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 20V9h12v11M9 9V5h6v4"/><path d="M6 14h12"/></svg></div><h3><span data-l="en">Welded structures</span><span data-l="fa">سازه‌های جوشی</span></h3><p><span data-l="en">Steel and 316 stainless frames for mounting and holding equipment.</span><span data-l="fa">سازه‌های فولادی و استیل ۳۱۶ برای نصب و نگه‌داری تجهیزات.</span></p></div><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="4" width="10" height="16" rx="5"/><path d="M12 4V2M10 12h4"/><circle cx="12" cy="12" r="2.2"/></svg></div><h3><span data-l="en">Pressure vessels</span><span data-l="fa">محفظه‌های تحت فشار</span></h3><p><span data-l="en">Enclosures and vessels designed and built for their working pressure.</span><span data-l="fa">طراحی و ساخت محفظه متناسب با فشار کاری.</span></p></div><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="7" height="12" rx="1"/><rect x="14" y="6" width="7" height="12" rx="1"/><path d="M10 12h4M7 10v4M17 10v4"/></svg></div><h3><span data-l="en">Injection moulds</span><span data-l="fa">قالب تزریق</span></h3><p><span data-l="en">Design and machining of plastic injection moulds.</span><span data-l="fa">طراحی و ماشین‌کاری قالب تزریق پلاستیک.</span></p></div><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 22V12M21 7l-9 5-9-5"/></svg></div><h3><span data-l="en">3D printing & composites</span><span data-l="fa">چاپ سه‌بعدی و کامپوزیت</span></h3><p><span data-l="en">Polymer and resin additive manufacturing, composite parts and printer design.</span><span data-l="fa">ساخت افزایشی پلیمری و رزینی، قطعات کامپوزیتی و طراحی پرینتر.</span></p></div><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7.5.4 2.8 1 6 2.6 6 1.8 0 1.6-5 4.4-5s2.6 5 4.4 5c1.6 0 2.2-3.2 2.6-6 .5-3 2-4.5 2-7.5C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg></div><h3><span data-l="en">Dental devices</span><span data-l="fa">تجهیزات دندانی</span></h3><p><span data-l="en">Feasibility and production of aligners, veneers and dental parts.</span><span data-l="fa">امکان‌سنجی و ساخت الاینر، لمینت و قطعات دندانی.</span></p></div><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg></div><h3><span data-l="en">Models & mock-ups</span><span data-l="fa">ماکت و مدل</span></h3><p><span data-l="en">Display and teaching models, including cutaway assemblies.</span><span data-l="fa">ماکت‌های نمایشی و آموزشی، از جمله مدل‌های برش‌خورده.</span></p></div><div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></svg></div><h3><span data-l="en">Consulting, QC & estimating</span><span data-l="fa">مشاوره، کنترل کیفی و برآورد</span></h3><p><span data-l="en">Technical consulting, dimensional and weld inspection, techno-economic estimates.</span><span data-l="fa">مشاوره‌ی فنی، بازرسی ابعادی و جوش، برآورد فنی و اقتصادی.</span></p></div></div>
+</div></section>
+<section class="block alt" id="projects"><div class="wrap">
+  <div class="head reveal"><div class="kk"><span data-l="en">Portfolio</span><span data-l="fa">نمونه‌کارها</span></div><h2><span data-l="en">Selected projects</span><span data-l="fa">پروژه‌های منتخب</span></h2><p><span data-l="en">Click a project to see photos and details. The small portraits show who did it.</span><span data-l="fa">برای دیدن تصویر و توضیحات هر پروژه، روی آن کلیک کنید. عکس‌های کوچک، انجام‌دهنده‌ی کار را نشان می‌دهند.</span></p></div>
+  <ol class="p-list reveal" id="proj-list"></ol>
+</div></section>
+<section class="block" id="honors"><div class="wrap">
+  <div class="head reveal"><div class="kk"><span data-l="en">Achievements</span><span data-l="fa">دستاوردها</span></div><h2><span data-l="en">Honors & rankings</span><span data-l="fa">افتخارات و رتبه‌ها</span></h2><p><span data-l="en">The team's most important scientific and technological awards.</span><span data-l="fa">مهم‌ترین دستاوردهای علمی و فناورانه‌ی اعضای گروه.</span></p></div>
+  <div class="h-grid"><div class="card reveal top"><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.5L7 22l5-3 5 3-1.2-8.5"/></svg></div><h3><span data-l="en">Laureate, 64th Alborz Elite Prize</span><span data-l="fa">برگزیده‌ی شصت‌وچهارمین جایزه‌ی البرز نخبگانی</span></h3><p><span data-l="en">One of 12 laureates in the Technologists & Inventors category, for the knee prosthesis constraint and stability test rig; with a commendation from Sharif University of Technology and a silver medal — 2026.</span><span data-l="fa">یکی از ۱۲ برگزیده‌ی بخش فناوران و مخترعان، برای دستگاه تست تقید و پایداری پروتز زانو؛ همراه با تقدیر دانشگاه صنعتی شریف و اهدای مدال نقره — ۱۴۰۵.</span></p></div><div class="card reveal top"><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div><h3><span data-l="en">2nd place, 26th Khwarizmi Youth Festival</span><span data-l="fa">مقام دوم بیست‌وششمین جشنواره‌ی جوان خوارزمی</span></h3><p><span data-l="en">For the postal sorting robots — 2024.</span><span data-l="fa">برای ربات‌های سورتر پستی — ۱۴۰۳.</span></p></div><div class="card reveal top"><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div><h3><span data-l="en">2nd place, 24th Khwarizmi Youth Festival</span><span data-l="fa">مقام دوم بیست‌وچهارمین جشنواره‌ی جوان خوارزمی</span></h3><p><span data-l="en">For the knee prosthesis test rig, with a UNESCO certificate and a presidential commendation — 2022.</span><span data-l="fa">برای دستگاه تست پروتز زانو، همراه با گواهی یونسکو و تقدیر رئیس‌جمهور — ۱۴۰۱.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9z"/></svg></div><h3><span data-l="en">Best technological thesis, Sharif</span><span data-l="fa">برترین پایان‌نامه‌ی فناورانه‌ی شریف</span></h3><p><span data-l="en">Faculty of Mechanical Engineering, Sharif University of Technology — 2021.</span><span data-l="fa">دانشکده‌ی مهندسی مکانیک، دانشگاه صنعتی شریف — ۱۴۰۰.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9z"/></svg></div><h3><span data-l="en">Top startup, Sharif Science & Technology Park</span><span data-l="fa">استارتاپ برتر پارک علم و فناوری شریف</span></h3><p><span data-l="en">For the postal sorting robots team — 2024.</span><span data-l="fa">برای تیم ربات‌های هوشمند پستی — ۱۴۰۳.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div><h3><span data-l="en">Best design, 4th Iran Industrial Design Festival</span><span data-l="fa">طرح برتر چهارمین جشنواره‌ی طراحی صنعتی ایران</span></h3><p><span data-l="en">For the postal sorting robots — 2024.</span><span data-l="fa">برای ربات‌های هوشمند پستی — ۱۴۰۳.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9z"/></svg></div><h3><span data-l="en">Top researcher & technologist, Sharif</span><span data-l="fa">پژوهشگر و فناور برتر دانشکده‌ی مکانیک شریف</span></h3><p><span data-l="en">MSc level, Faculty of Mechanical Engineering, Research Week — 2025.</span><span data-l="fa">مقطع کارشناسی ارشد، هفته‌ی پژوهش — ۱۴۰۴.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.5L7 22l5-3 5 3-1.2-8.5"/></svg></div><h3><span data-l="en">Best paper, ICRoM 2025</span><span data-l="fa">مقاله‌ی برتر کنفرانس <bdi>ICRoM 2025</bdi></span></h3><p><span data-l="en">International Conference on Robotics and Mechatronics, IUST — 2025.</span><span data-l="fa">کنفرانس بین‌المللی رباتیک و مکاترونیک، دانشگاه علم و صنعت — ۱۴۰۴.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.5L7 22l5-3 5 3-1.2-8.5"/></svg></div><h3><span data-l="en">Top teaching assistant</span><span data-l="fa">دستیار آموزشی برتر</span></h3><p><span data-l="en">Iranian Society for Engineering Education — 2025.</span><span data-l="fa">انجمن آموزش مهندسی ایران — ۱۴۰۴.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div><h3><span data-l="en">Rank 16, national MSc entrance exam</span><span data-l="fa">رتبه‌ی ۱۶ کنکور کارشناسی ارشد مکانیک</span></h3><p><span data-l="en">Among more than 10,000 candidates; and rank 11 in the final stage of the national student olympiad in mechanical engineering — 2018.</span><span data-l="fa">از میان بیش از ۱۰٬۰۰۰ شرکت‌کننده؛ و رتبه‌ی ۱۱ مرحله‌ی نهایی المپیاد علمی دانشجویی مکانیک — ۱۳۹۷.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div><h3><span data-l="en">Rank 10, national student olympiad</span><span data-l="fa">رتبه‌ی ۱۰ کشوری المپیاد دانشجویی مکانیک</span></h3><p><span data-l="en">Mechanical engineering — 2022; also ranked 1st of 117 in his BSc entry year at K. N. Toosi University.</span><span data-l="fa">مهندسی مکانیک — ۱۴۰۱؛ و رتبه‌ی ۱ از میان ۱۱۷ ورودی کارشناسی دانشگاه خواجه نصیر.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div><h3><span data-l="en">1st-ranked GPA, MSc Manufacturing</span><span data-l="fa">رتبه‌ی اول معدل ارشد ساخت و تولید</span></h3><p><span data-l="en">Tarbiat Modares University; selected by the exceptional talents office.</span><span data-l="fa">دانشگاه تربیت مدرس؛ منتخب استعدادهای درخشان.</span></p></div><div class="card reveal"><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span><div class="ico"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 21.5A2.5 2.5 0 0 1 6.5 19H20v3H6.5"/></svg></div><h3><span data-l="en">Author, “Physics Olympiads in Iran”</span><span data-l="fa">تألیف کتاب «المپیادهای فیزیک در ایران»</span></h3><p><span data-l="en">Khoshkhan Publishing — 2018.</span><span data-l="fa">نشر خوشخوان — ۱۳۹۷.</span></p></div></div>
+</div></section>
+<section class="block alt" id="publications"><div class="wrap">
+  <div class="head reveal"><div class="kk"><span data-l="en">Research</span><span data-l="fa">پژوهش</span></div><h2><span data-l="en">Publications</span><span data-l="fa">مقالات علمی</span></h2><p><span data-l="en">Journal and conference papers by the team.</span><span data-l="fa">مقالات مجله و کنفرانسی اعضای گروه.</span></p></div>
+  <div class="pub reveal">
+    <div class="top"><span class="jbadge">📄 Scientific Reports — Nature · <b>Q1</b></span><span class="who lg"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span></div>
+    <div class="ptitle">Frictional behavior between bone and additively manufactured Ti6Al4V implants is affected by bone density and surface texture under varying loads</div>
+    <p class="psum"><span data-l="en">A study of friction between bone and titanium (Ti6Al4V) implants made by selective laser melting (SLM). The friction coefficient was measured for different combinations of bone density, implant surface texture and load — results that support the design of custom orthopaedic implants matched to each patient's bone.</span><span data-l="fa">بررسی رفتار اصطکاکی میان استخوان و ایمپلنت‌های تیتانیومی (<bdi>Ti6Al4V</bdi>) ساخته‌شده با روش ذوب لیزری انتخابی (<bdi>SLM</bdi>). در این پژوهش، ضریب اصطکاک برای ترکیب‌های مختلف چگالی استخوان، بافت سطح ایمپلنت و میزان بار اندازه‌گیری شد؛ نتایجی که به طراحی ایمپلنت‌های ارتوپدی سفارشی و متناسب با ویژگی‌های استخوانی هر بیمار کمک می‌کند.</span></p>
+    <div class="authors">Ali Abedi, Farzam Farahmand, Mohammadjavad Salmanimehrjardi &amp; <b>Hasan Nasiri Khonsari</b></div>
+    <div class="prole"><span data-l="en">Our role: development and fabrication of the friction test apparatus.</span><span data-l="fa">نقش ما در این پژوهش: توسعه و ساخت دستگاه آزمون اصطکاک.</span></div>
+    <div class="pmeta"><span><span data-l="en">Published</span><span data-l="fa">سال انتشار</span>: <b><span data-l="en">2025</span><span data-l="fa">۲۰۲۵</span></b></span><span><span data-l="en">Sharif University of Technology</span><span data-l="fa">دانشگاه صنعتی شریف</span></span><span class="ltr">DOI: 10.1038/s41598-025-25586-0</span></div>
+    <a class="plink" href="https://doi.org/10.1038/s41598-025-25586-0" target="_blank" rel="noopener"><span data-l="en">View paper ↗</span><span data-l="fa">مشاهده‌ی مقاله ↗</span></a>
+  </div>
+  <ul class="plist reveal"><li><span class="who lg"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span><div class="body"><div class="pt">Large deformation of shape-memory polymer-based lattice metamaterials</div><div class="pv">International Journal of Mechanical Sciences (Elsevier) · <a href="https://doi.org/10.1016/j.ijmecsci.2022.107593" target="_blank" rel="noopener">DOI ↗</a></div></div></li><li><span class="who lg"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span><div class="body"><div class="pt">Prediction of Lower Limb Gait Trajectories in Patients with Cerebral Palsy Using Deep Learning Models</div><div class="pv">ICRoM 2025 — Best Paper</div></div></li><li><span class="who lg"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span><div class="body"><div class="pt">Application of Deep Learning Models in Classification of Sagittal Gait Patterns Based on Rodda's Classification System in Patients with Cerebral Palsy</div><div class="pv">ICBME 2024</div></div></li><li><span class="who lg"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span><div class="body"><div class="pt">Simulation and Fabrication of Auxetic Polymer Tube and Shape Memory Behavior</div><div class="pv">9th International Conference on Manufacturing Engineering, Tehran · <a href="https://civilica.com/doc/2014920" target="_blank" rel="noopener">Link ↗</a></div></div></li><li><span class="who lg"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span><div class="body"><div class="pt">Design and Control of a Cable-Driven Parallel Robot for Postural Alignment Improvement in Cerebral Palsy</div><div class="pv">Manuscript in preparation</div></div></li></ul>
+</div></section>
+<section class="block" id="skills"><div class="wrap">
+  <div class="head reveal"><div class="kk"><span data-l="en">Expertise</span><span data-l="fa">تخصص‌ها</span></div><h2><span data-l="en">Skills & software</span><span data-l="fa">مهارت‌ها و نرم‌افزارها</span></h2></div>
+  <div class="skill-cat reveal"><h3><span data-l="en">Design & analysis</span><span data-l="fa">طراحی و تحلیل</span></h3><div class="chips"><span class="chip">SolidWorks</span><span class="chip">CATIA</span><span class="chip">Inventor</span><span class="chip">ANSYS</span><span class="chip">Abaqus</span><span class="chip"><span data-l="en">Mechanism design</span><span data-l="fa">طراحی مکانیزم</span></span><span class="chip"><span data-l="en">FEA</span><span data-l="fa">تحلیل اجزای محدود (<bdi>FEA</bdi>)</span></span><span class="chip"><span data-l="en">Vibration analysis</span><span data-l="fa">تحلیل ارتعاشی</span></span></div></div><div class="skill-cat reveal"><h3><span data-l="en">Manufacturing</span><span data-l="fa">ساخت و تولید</span></h3><div class="chips"><span class="chip"><span data-l="en">CNC machining</span><span data-l="fa">ماشین‌کاری <bdi>CNC</bdi></span></span><span class="chip">SolidCAM</span><span class="chip">Mastercam</span><span class="chip">PowerMill</span><span class="chip">GD&amp;T</span><span class="chip"><span data-l="en">Welded structures</span><span data-l="fa">سازه‌های جوشی</span></span><span class="chip"><span data-l="en">Cold forging</span><span data-l="fa">فورج سرد</span></span><span class="chip"><span data-l="en">Composites</span><span data-l="fa">کامپوزیت</span></span></div></div><div class="skill-cat reveal"><h3><span data-l="en">Automation & control</span><span data-l="fa">اتوماسیون و کنترل</span></h3><div class="chips"><span class="chip"><span data-l="en">Delta PLC</span><span data-l="fa"><bdi>PLC</bdi> دلتا</span></span><span class="chip">Siemens TIA Portal</span><span class="chip">HMI</span><span class="chip">LabVIEW</span><span class="chip">MATLAB / Simulink</span><span class="chip">ADAMS</span><span class="chip"><span data-l="en">PID & sliding-mode control</span><span data-l="fa">کنترل <bdi>PID</bdi> و مود لغزشی</span></span><span class="chip"><span data-l="en">Motion control</span><span data-l="fa">کنترل حرکت</span></span></div></div><div class="skill-cat reveal"><h3><span data-l="en">Electronics & prototyping</span><span data-l="fa">الکترونیک و نمونه‌سازی</span></h3><div class="chips"><span class="chip">ARM / STM32</span><span class="chip">AVR / Arduino</span><span class="chip">Altium</span><span class="chip">Proteus</span><span class="chip"><span data-l="en">FDM & DLP 3D printing</span><span data-l="fa">پرینت سه‌بعدی <bdi>FDM</bdi> و <bdi>DLP</bdi></span></span></div></div><div class="skill-cat reveal"><h3><span data-l="en">Robotics & AI</span><span data-l="fa">رباتیک و هوش مصنوعی</span></h3><div class="chips"><span class="chip"><span data-l="en">Industrial & service robots</span><span data-l="fa">ربات صنعتی و خدماتی</span></span><span class="chip"><span data-l="en">Cable-driven robots</span><span data-l="fa">ربات کابلی</span></span><span class="chip"><span data-l="en">Exoskeletons</span><span data-l="fa">اسکلت بیرونی</span></span><span class="chip"><span data-l="en">Deep learning (CNN, LSTM, Transformer)</span><span data-l="fa">یادگیری عمیق (<bdi>CNN</bdi>، <bdi>LSTM</bdi>، <bdi>Transformer</bdi>)</span></span></div></div>
+</div></section>
+<section class="block alt" id="experience"><div class="wrap">
+  <div class="head reveal"><div class="kk"><span data-l="en">Background</span><span data-l="fa">سوابق کاری</span></div><h2><span data-l="en">Professional experience</span><span data-l="fa">تجربه‌ی حرفه‌ای</span></h2></div>
+  <div class="timeline"><div class="tl reveal team"><div class="row"><span class="when"><span data-l="en">2025 – present</span><span data-l="fa">۱۴۰۴ تا اکنون</span></span><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Design & fabrication contracting — Entha Group</span><span data-l="fa">پیمانکاری طراحی و ساخت — گروه فنی مهندسی انتها</span></h3><div class="org"><span data-l="en">Tehran & Isfahan</span><span data-l="fa">تهران و اصفهان</span></div><p class="d"><span data-l="en">Industrial parts, assemblies and structures: estimating and pricing, material procurement, managing machining, laser cutting, bending, rolling and welding, quality control and assembly.</span><span data-l="fa">ساخت قطعات، مجموعه‌ها و سازه‌های صنعتی: برآورد و قیمت‌گذاری، تأمین متریال، مدیریت فرآیندهای ماشین‌کاری، برش لیزر، خم‌کاری، نورد و جوشکاری، کنترل کیفیت و مونتاژ.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2025 – present</span><span data-l="fa">۱۴۰۴ تا اکنون</span></span><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Senior Mechanical Engineer</span><span data-l="fa">مهندس ارشد مکانیک</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Part and assembly design, dimensional and weld inspection, and management of machining and external fabrication shops; more than 8,000 industrial parts delivered so far.</span><span data-l="fa">طراحی قطعه و مجموعه، بازرسی ابعادی و جوش، و مدیریت کارگاه‌های ماشین‌کاری و ساخت بیرونی؛ تا امروز بیش از ۸٬۰۰۰ قطعه‌ی صنعتی تحویل شده است.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2025 – present</span><span data-l="fa">آذر ۱۴۰۴ تا اکنون</span></span><span class="who"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Production Mechanical Engineer (self-employed)</span><span data-l="fa">مهندس مکانیک تولید (خوداشتغال)</span></h3><div class="org"><span data-l="en">Isfahan</span><span data-l="fa">اصفهان</span></div><p class="d"><span data-l="en">Contract fabrication, quality control and assembly of industrial part sets; leading an engineering team.</span><span data-l="fa">پیمانکاری، ساخت، کنترل کیفی و مونتاژ مجموعه‌قطعات صنعتی و مدیریت تیم مهندسی.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2025</span><span data-l="fa">۱۴۰۴</span></span><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">R&D Robotics Engineer</span><span data-l="fa">مهندس تحقیق و توسعه‌ی رباتیک</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Lower-limb exoskeleton: concept design, actuator selection, structure and mechanism, detailed mechanical design.</span><span data-l="fa">ربات اسکلت بیرونی پایین‌تنه: طراحی مفهومی، انتخاب عملگر، طراحی سازه و مکانیزم و طراحی مکانیکی جزئی.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2024 – 2025</span><span data-l="fa">۱۴۰۳ تا ۱۴۰۴</span></span><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Patent Examiner, Mechanical Engineering — Sharif University of Technology</span><span data-l="fa">داور ثبت اختراع در حوزه‌ی مکانیک — دانشگاه صنعتی شریف</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Reviewing and evaluating patent applications in mechanical engineering.</span><span data-l="fa">بررسی و داوری تقاضانامه‌های ثبت اختراع در حوزه‌ی مهندسی مکانیک.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2024</span><span data-l="fa">۱۴۰۲</span></span><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Lecturer — University of Tehran, Kish International Campus</span><span data-l="fa">مدرس — دانشگاه تهران، پردیس بین‌المللی کیش</span></h3><div class="org"><span data-l="en">Kish</span><span data-l="fa">کیش</span></div><p class="d"><span data-l="en">Taught Manufacturing Processes and Physics 2 in the second semester of 2023–24.</span><span data-l="fa">تدریس دروس «روش‌های تولید» و «فیزیک ۲» در نیم‌سال دوم ۱۴۰۲-۱۴۰۳.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2023 – 2025</span><span data-l="fa">۱۴۰۲ تا ۱۴۰۴</span></span><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Lecturer & Teaching Assistant — Sharif University of Technology</span><span data-l="fa">مدرس و دستیار آموزشی — دانشگاه صنعتی شریف</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Taught the Dynamics of Machinery and Measurement & Control laboratories; TA for Nonlinear Control, Medical Robotics, Musculoskeletal Biomechanics and Advanced Dynamics.</span><span data-l="fa">تدریس آزمایشگاه‌های دینامیک ماشین و اندازه‌گیری و کنترل؛ دستیار آموزشی دروس کنترل غیرخطی، رباتیک پزشکی، بیومکانیک اسکلتی‌عضلانی و دینامیک پیشرفته.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2022 – present</span><span data-l="fa">۱۴۰۱ تا اکنون</span></span><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Research Assistant — Medical Robotics Lab, Sharif University of Technology</span><span data-l="fa">دستیار پژوهشی — آزمایشگاه رباتیک پزشکی، دانشگاه صنعتی شریف</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Research in medical and rehabilitation robotics, supervised by Dr Farzam Farahmand and Dr Saeed Behzadipour.</span><span data-l="fa">پژوهش در رباتیک پزشکی و توانبخشی، زیر نظر دکتر فرزام فرهمند و دکتر سعید بهزادی‌پور.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2022 – 2024</span><span data-l="fa">۱۴۰۱ تا ۱۴۰۳</span></span><span class="who"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Production Supervisor — Postal Sorting Robots</span><span data-l="fa">سرپرست تولید — ربات‌های سورتر پستی</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Fabrication and production management of smart parcel-sorting robots for Iran Post; production line design to industrial standards; cost and process optimisation.</span><span data-l="fa">ساخت و مدیریت تولید ربات‌های هوشمند تفکیک مرسولات پست ایران؛ طراحی خط تولید مطابق استانداردهای تولید صنعتی؛ بهینه‌سازی هزینه و فرآیند.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2022</span><span data-l="fa">۱۴۰۱</span></span><span class="who"><img class="av" src="av-mostafa.webp" data-p="m" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Mechanical Engineering Intern — construction 3D printing</span><span data-l="fa">کارآموز مهندسی مکانیک — چاپ سه‌بعدی ساختمان</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Concept design, feasibility study and dynamic analysis of a construction-printing robot in ADAMS.</span><span data-l="fa">طراحی مفهومی، امکان‌سنجی و تحلیل دینامیکی مکانیزم ربات چاپ ساختمان با نرم‌افزار <bdi>ADAMS</bdi>.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2021 – 2024</span><span data-l="fa">۱۴۰۰ تا ۱۴۰۳</span></span><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Product Design Manager (part-time)</span><span data-l="fa">مدیر طراحی محصول (پاره‌وقت)</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Mechanical and electronic design of an omnidirectional mobile robot.</span><span data-l="fa">طراحی مکانیک و الکترونیک ربات متحرک با چرخ‌های همه‌جهته.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2020 – 2025</span><span data-l="fa">۱۳۹۹ تا ۱۴۰۴</span></span><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Head of Mechanical Engineering — Industrial Robotics</span><span data-l="fa">مدیر واحد مهندسی مکانیک — رباتیک صنعتی</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Mechanical development of industrial robots; managed the build of 50 sorting robots for Iran Post's Tehran distribution centre and 30 for Kermanshah, coordinating workshops and supervising the assembly and integration team.</span><span data-l="fa">توسعه‌ی مکانیکی ربات‌های صنعتی؛ مدیریت ساخت ۵۰ ربات سورتر برای مرکز توزیع مرسولات تهران و ۳۰ ربات برای کرمانشاه، هماهنگی کارگاه‌ها و سرپرستی تیم مونتاژ و یکپارچه‌سازی.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2019</span><span data-l="fa">۱۳۹۸</span></span><span class="who"><img class="av" src="av-hassan.webp" data-p="h" alt="" width="56" height="56" loading="lazy"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Project Intern — Tehran City Theatre automation</span><span data-l="fa">کارآموز پروژه — اتوماسیون تئاتر شهر</span></h3><div class="org"><span data-l="en">Tehran</span><span data-l="fa">تهران</span></div><p class="d"><span data-l="en">Automation and stage machinery for the main hall of Tehran City Theatre.</span><span data-l="fa">اتوماسیون و تجهیز ماشین‌آلات سالن اصلی تئاتر شهر تهران.</span></p></div><div class="tl reveal"><div class="row"><span class="when"><span data-l="en">2017 – 2018</span><span data-l="fa">۱۳۹۶ تا ۱۳۹۷</span></span><span class="who"><img class="av" src="av-alireza.webp" data-p="a" alt="" width="56" height="56" loading="lazy"></span></div>
+<h3><span data-l="en">Technical & R&D Specialist — metal forming</span><span data-l="fa">کارشناس فنی و تحقیق و توسعه — شکل‌دهی فلز</span></h3><div class="org"><span data-l="en">Isfahan</span><span data-l="fa">اصفهان</span></div><p class="d"><span data-l="en">Design and assembly of machine parts, thread rolling and cold forging, measurement and quality control, GD&amp;T.</span><span data-l="fa">طراحی و مونتاژ قطعات ماشین‌آلات، رزوه‌زنی و فورج سرد، اندازه‌گیری و کنترل کیفیت، <bdi>GD&amp;T</bdi>.</span></p></div></div>
+</div></section>
+<section class="block contact" id="contact"><div class="wrap">
+  <h2 class="reveal"><span data-l="en">Contact</span><span data-l="fa">تماس</span></h2>
+  <p class="reveal"><span data-l="en">For design, fabrication or automation projects, use the form below or reach us directly.</span><span data-l="fa">برای همکاری در پروژه‌های طراحی، ساخت یا اتوماسیون می‌توانید از فرم زیر یا راه‌های ارتباطی دیگر استفاده کنید.</span></p>
+  <form class="cform reveal" id="contactForm" action="https://formspree.io/f/mrevzvga" method="POST">
+    <input type="hidden" name="_subject" value="Entha Group website — new message">
+    <input type="hidden" name="source" value="https://enthagroup.github.io/">
+    <div class="cf-row">
+      <input type="text" name="name" data-ph-en="Your name" data-ph-fa="نام شما" placeholder="Your name" required>
+      <input type="email" name="email" data-ph-en="Your email" data-ph-fa="ایمیل شما" placeholder="Your email" required>
+    </div>
+    <textarea name="message" rows="4" data-ph-en="Your message…" data-ph-fa="پیام شما…" placeholder="Your message…" required></textarea>
+    <button type="submit" class="cf-btn"><span data-l="en">Send message</span><span data-l="fa">ارسال پیام</span></button>
+    <div class="cf-status" id="cfStatus" aria-live="polite"></div>
+  </form>
+  <p class="c-other reveal"><span data-l="en">Other ways to reach us:</span><span data-l="fa">راه‌های ارتباطی دیگر:</span></p>
+  <div class="c-links reveal">
+    <a href="mailto:Nasiri2752@Gmail.com"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg><span>Nasiri2752@Gmail.com</span></a>
+    <a href="tel:+989962233898"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-l="en">+98 996 223 3898</span><span data-l="fa">۰۹۹۶۲۲۳۳۸۹۸</span></a>
+  </div>
+</div></section>
+<footer>© <span id="yr"></span> <span data-l="en">Entha Group</span><span data-l="fa">گروه فنی مهندسی انتها</span> — <span data-l="en">All rights reserved.</span><span data-l="fa">همه‌ی حقوق محفوظ است.</span></footer>
+<a href="tel:+989962233898" class="fab-phone" aria-label="Phone"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+<div class="pmodal" id="pmodal" role="dialog" aria-modal="true"><div class="pcard">
+  <button class="pclose" type="button" aria-label="Close" onclick="closeProj()">×</button>
+  <div class="pm-media"><img id="pm-img" src="" alt=""><span id="pm-cap"></span></div>
+  <div id="pm-thumbs"></div>
+  <div class="pbody"><div class="pm-top"><div id="pm-year"></div></div><div id="pm-title"></div><div id="pm-desc"></div><div id="pm-tags"></div><div id="pm-who"></div></div>
+</div></div>
+<script>
+const D = {"projects": [{"n": {"en": "01", "fa": "۰۱"}, "who": ["h", "a"], "title": {"en": "Postal sorting robots", "fa": "ربات‌های سورتر پستی"}, "year": {"en": "2020–2025", "fa": "۱۳۹۹ تا ۱۴۰۴"}, "tags": {"en": ["Robot fabrication", "Series production", "Mechanical design"], "fa": ["ساخت ربات", "تولید سری", "طراحی مکانیک"]}, "desc": {"en": ["Autonomous sorting robots for parcel sorting at Iran Post. We built and assembled the first and second generations: 50 robots for the Tehran distribution centre and 30 for Kermanshah, 80 in total.", "The third generation was designed by Hassan Nasiri Khonsari — unloading mechanism, weighing system, frame and drive — and went into production at a volume of 200 units. The project won second place at the 26th Khwarizmi Youth Festival."], "fa": ["ربات‌های سورتر خودگردان برای تفکیک مرسولات در شرکت ملی پست. ساخت و مونتاژ نسل‌های اول و دوم را انجام دادیم: ۵۰ دستگاه برای مرکز توزیع تهران و ۳۰ دستگاه برای کرمانشاه، در مجموع ۸۰ ربات.", "طراحی نسل سوم، شامل مکانیزم تخلیه‌ی بار، سامانه‌ی توزین، استراکچر و سیستم حرکت، کار حسن نصیری خونساری است که در تیراژ ۲۰۰ دستگاه به تولید رسید. این پروژه مقام دوم بیست‌وششمین جشنواره‌ی جوان خوارزمی را گرفت."]}, "imgs": [{"src": "p-sorter-1.webp", "w": 1344, "h": 896, "cap": {"en": "Generation 1", "fa": "نسل اول"}}, {"src": "p-sorter-2.webp", "w": 1288, "h": 924, "cap": {"en": "Generation 2", "fa": "نسل دوم"}}, {"src": "p-sorter-3.webp", "w": 1288, "h": 952, "cap": {"en": "Generation 3", "fa": "نسل سوم"}}]}, {"n": {"en": "02", "fa": "۰۲"}, "who": ["h"], "title": {"en": "Knee prosthesis constraint & stability test rig", "fa": "دستگاه تست تقید و پایداری پروتز زانو"}, "year": {"en": "2021", "fa": "۱۴۰۰"}, "tags": {"en": ["Medical devices", "Automation", "ASTM F1223"], "fa": ["تجهیزات پزشکی", "اتوماسیون", "<bdi>ASTM F1223</bdi>"]}, "desc": {"en": ["A six-degree-of-freedom rig for constraint and stability testing of total knee prostheses to ASTM F1223, built as an MSc thesis at Sharif University of Technology under Dr Mohammad Durali, advised by Dr Farzam Farahmand. Mechanical design, automation architecture, PLC programming and HMI development were all done in-house. The rig has been delivered and is in research use.", "No comparable machine existed in Iran; commercial equivalents come from companies such as EndoLab (Germany) and AMTI (USA). The project was named the faculty's best technological thesis, took second place at the 24th Khwarizmi Youth Festival, and was selected at the 64th Alborz Elite Prize. The rig was later reconfigured to study bone–implant friction, leading to a paper in Scientific Reports."], "fa": ["دستگاهی برای آزمون تقید و پایداری پروتز کامل زانو در شش درجه‌ی آزادی، مطابق استاندارد <bdi>ASTM F1223</bdi>؛ پایان‌نامه‌ی کارشناسی ارشد در دانشگاه صنعتی شریف، زیر نظر دکتر محمد دورعلی و با مشاوره‌ی دکتر فرهمند. طراحی مکانیکی، معماری اتوماسیون، برنامه‌نویسی <bdi>PLC</bdi> و توسعه‌ی <bdi>HMI</bdi> همه در همین پروژه انجام شد. دستگاه تحویل شده و در کارهای پژوهشی استفاده می‌شود.", "پیش از این، نمونه‌ی مشابهی در ایران وجود نداشت و معادل‌های تجاری آن را شرکت‌هایی مثل <bdi>EndoLab</bdi> آلمان و <bdi>AMTI</bdi> آمریکا می‌سازند. این پروژه عنوان برترین پایان‌نامه‌ی فناورانه‌ی دانشکده، مقام دوم بیست‌وچهارمین جشنواره‌ی جوان خوارزمی و برگزیدگی در شصت‌وچهارمین جایزه‌ی البرز را به دست آورد. بعدها همین دستگاه برای مطالعه‌ی اصطکاک میان استخوان و ایمپلنت بازپیکربندی شد که حاصلش مقاله‌ای در <bdi>Scientific Reports</bdi> است."]}, "imgs": [{"src": "p-knee.webp", "w": 952, "h": 1288, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "03", "fa": "۰۳"}, "who": ["h"], "title": {"en": "DMD powder feeder", "fa": "سامانه‌ی تغذیه‌ی پودر DMD"}, "year": {"en": "2019", "fa": "۱۳۹۸"}, "tags": {"en": ["Metal additive manufacturing", "Control", "Electronics"], "fa": ["ساخت افزایشی فلز", "کنترل", "الکترونیک"]}, "desc": {"en": ["A powder feeder for laser direct metal deposition (DMD). Detailed design, fabrication, and the complete electronics, control and machine logic were developed in-house; the feed rate is controlled between 1 and 100 g/min.", "This was a BSc thesis at Iran University of Science and Technology, supervised by Dr Seyed Ali Niknam."], "fa": ["تغذیه‌کننده‌ی پودر برای فرآیند رسوب مستقیم فلز با لیزر (<bdi>DMD</bdi>). طراحی تفصیلی، ساخت و پیاده‌سازی کامل الکترونیک، کنترل و منطق دستگاه در همین پروژه انجام شد؛ نرخ تغذیه در بازه‌ی ۱ تا ۱۰۰ گرم بر دقیقه کنترل می‌شود.", "این پروژه پایان‌نامه‌ی کارشناسی در دانشگاه علم و صنعت ایران بود، زیر نظر دکتر سید علی نیکنام."]}, "imgs": [{"src": "p-dmd.webp", "w": 1288, "h": 952, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "04", "fa": "۰۴"}, "who": ["h"], "title": {"en": "Industrial FDM 3D printers", "fa": "پرینترهای سه‌بعدی FDM صنعتی"}, "year": {"en": "2020–2023", "fa": "۱۳۹۹ تا ۱۴۰۲"}, "tags": {"en": ["3D printing", "Mechanism design", "Electronics & firmware"], "fa": ["پرینت سه‌بعدی", "طراحی مکانیزم", "الکترونیک و فرم‌ور"]}, "desc": {"en": ["Five machines designed and built from scratch and re-engineered generation by generation: from a 200 × 200 × 150 mm printer to an industrial machine with a 500 × 500 × 400 mm build volume, ball screws and industrial linear rails on every axis.", "Frame, mechanism, motor selection, electronics, firmware and slicer tuning were all done independently."], "fa": ["پنج دستگاه که از صفر طراحی و ساخته شدند و نسل‌به‌نسل بازمهندسی شدند: از یک دستگاه ۲۰۰×۲۰۰×۱۵۰ میلی‌متری تا ماشینی صنعتی با حجم کاری ۵۰۰×۵۰۰×۴۰۰ میلی‌متر که روی همه‌ی محورها بال‌اسکرو و ریل خطی صنعتی دارد.", "سازه، مکانیزم، انتخاب موتورها، الکترونیک، فرم‌ور و بهینه‌سازی اسلایسر همه مستقل انجام شد."]}, "imgs": [{"src": "p-printer-1.webp", "w": 1288, "h": 952, "cap": {"en": "Generation 1 — 30 × 30 × 40 cm", "fa": "نسل اول — ۳۰×۳۰×۴۰ سانتی‌متر"}}, {"src": "p-printer-2.webp", "w": 756, "h": 1008, "cap": {"en": "Generation 2 — 30 × 30 × 40 cm", "fa": "نسل دوم — ۳۰×۳۰×۴۰ سانتی‌متر"}}, {"src": "p-printer-3.webp", "w": 980, "h": 1232, "cap": {"en": "Generation 3 — 50 × 50 × 40 cm", "fa": "نسل سوم — ۵۰×۵۰×۴۰ سانتی‌متر"}}]}, {"n": {"en": "05", "fa": "۰۵"}, "who": ["h", "a", "m"], "title": {"en": "Rail-guided platform over a test pool", "fa": "پلتفرم متحرک ریلی روی استخر"}, "year": {"en": "2024", "fa": "۱۴۰۳"}, "tags": {"en": ["Welded structure", "Fabrication", "Installation"], "fa": ["سازه‌ی جوشی", "ساخت", "نصب"]}, "desc": {"en": ["A rail-guided mobile platform and cabin built over a pool used for water-treatment quality testing. The team handled the structure, fabrication and on-site installation."], "fa": ["سکو و اتاقک متحرک ریلی روی استخری که برای آزمون کیفیت تصفیه‌ی آب استفاده می‌شود. سازه، ساخت و نصب در محل را تیم انجام داد."]}, "imgs": [{"src": "p-platform.webp", "w": 586, "h": 780, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "06", "fa": "۰۶"}, "who": ["m"], "title": {"en": "Cable-driven rehabilitation robot", "fa": "ربات کابلی توانبخشی"}, "year": {"en": "2022–2025", "fa": "۱۴۰۱ تا ۱۴۰۴"}, "tags": {"en": ["Medical robotics", "Cable-driven robot", "Control"], "fa": ["رباتیک پزشکی", "ربات کابلی", "کنترل"]}, "desc": {"en": ["A cable-driven robotic system to improve postural alignment in children with cerebral palsy — design, fabrication and control. MSc thesis at Sharif University of Technology, supervised by Dr Farzam Farahmand and Dr Mohammad Durali."], "fa": ["طراحی، ساخت و کنترل یک سیستم رباتیک کابلی برای اصلاح ناراستایی وضعیتی در کودکان دچار فلج مغزی. پایان‌نامه‌ی کارشناسی ارشد در دانشگاه صنعتی شریف، زیر نظر دکتر فرزام فرهمند و دکتر محمد دورعلی."]}, "imgs": [{"src": "p-rehab.webp", "w": 780, "h": 585, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "07", "fa": "۰۷"}, "who": ["h"], "title": {"en": "Waiter robots", "fa": "ربات‌های گارسون"}, "year": {"en": "2021", "fa": "۱۴۰۰"}, "tags": {"en": ["Service robotics", "Body design"], "fa": ["رباتیک خدماتی", "طراحی بدنه"]}, "desc": {"en": ["Design, fabrication and mechanical assembly of a fleet of seven waiter robots for carrying and serving food in a restaurant.", "The main focus was the chassis and drive, so the robots stay stable and reliable on uneven restaurant floors; the body was designed with safety and a look suited to a dining room in mind."], "fa": ["طراحی، ساخت و مونتاژ مکانیکی ناوگانی هفت‌تایی از ربات‌های گارسون برای حمل و سرو غذا در رستوران.", "تمرکز اصلی روی شاسی و سیستم حرکت بود تا ربات‌ها روی کف ناهموار رستوران هم پایدار و قابل اعتماد کار کنند؛ بدنه هم با در نظر گرفتن ایمنی و ظاهر مناسب محیط پذیرایی طراحی شد."]}, "imgs": [{"src": "p-waiter.webp", "w": 896, "h": 1344, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "08", "fa": "۰۸"}, "who": ["h"], "title": {"en": "Dual-purpose industrial CNC", "fa": "CNC صنعتی دوکاره"}, "year": {"en": "2023", "fa": "۱۴۰۲"}, "tags": {"en": ["CNC", "CAM", "Structural design"], "fa": ["<bdi>CNC</bdi>", "<bdi>CAM</bdi>", "طراحی سازه"]}, "desc": {"en": ["An industrial CNC for cutting wood and light metals with a large bed (about 100 × 100 cm), designed as a modular machine: swapping the head turns it into a capable 3D printer.", "Structural design, selection of drives and motors, and setting up the G-code control system were part of the work. The goal was an affordable multi-purpose machine for small and medium workshops."], "fa": ["یک دستگاه <bdi>CNC</bdi> صنعتی برای برش چوب و فلزات سبک با میز کاری بزرگ (حدود ۱۰۰×۱۰۰ سانتی‌متر) که به‌صورت ماژولار طراحی شده است؛ یعنی با تعویض ساده‌ی هد، می‌تواند به یک پرینتر سه‌بعدی قدرتمند تبدیل شود.", "طراحی سازه، انتخاب درایوها و موتورها و راه‌اندازی سیستم کنترل با <bdi>G-Code</bdi> بخشی از این کار بود. هدف، ساخت یک ماشین چندکاره و مقرون‌به‌صرفه برای کارگاه‌های کوچک و متوسط بود."]}, "imgs": [{"src": "p-cnc.webp", "w": 1372, "h": 896, "cap": {"en": "Machine", "fa": "دستگاه"}}, {"src": "p-cnc-panel.webp", "w": 1148, "h": 1064, "cap": {"en": "Electrical cabinet", "fa": "تابلو برق"}}, {"src": "p-cnc-panel-open.webp", "w": 952, "h": 1288, "cap": {"en": "Inside the cabinet", "fa": "داخل تابلو برق"}}]}, {"n": {"en": "09", "fa": "۰۹"}, "who": ["a"], "title": {"en": "Dental aligners & veneers", "fa": "الاینر ارتودنسی و لمینت دندان"}, "year": {"en": "2024", "fa": "۱۴۰۳"}, "tags": {"en": ["Resin 3D printing", "Dental devices"], "fa": ["چاپ سه‌بعدی رزینی", "تجهیزات دندانی"]}, "desc": {"en": ["Feasibility study and production of orthodontic aligners and removable dental veneers by resin (DLP) 3D printing."], "fa": ["امکان‌سنجی و تولید الاینر ارتودنسی و لمینت متحرک دندان به روش چاپ سه‌بعدی رزینی (<bdi>DLP</bdi>)."]}, "imgs": [{"src": "p-dental.webp", "w": 780, "h": 439, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "10", "fa": "۱۰"}, "who": ["a"], "title": {"en": "Conveyor-belt FDM 3D printer", "fa": "پرینتر سه‌بعدی نوار نقاله‌ای (FDM)"}, "year": {"en": "", "fa": ""}, "tags": {"en": ["3D printing", "Continuous printing"], "fa": ["پرینت سه‌بعدی", "چاپ پیوسته"]}, "desc": {"en": ["An FDM printer with a conveyor-belt bed for continuous printing of long parts and batches."], "fa": ["پرینتر <bdi>FDM</bdi> با بستر نوار نقاله‌ای برای چاپ پیوسته‌ی قطعات بلند و تولید دسته‌ای."]}, "imgs": [{"src": "p-conveyor.webp", "w": 586, "h": 780, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "11", "fa": "۱۱"}, "who": ["a"], "title": {"en": "Plastic injection mould", "fa": "قالب تزریق پلاستیک"}, "year": {"en": "2020", "fa": "۱۳۹۹"}, "tags": {"en": ["Mould design", "Machining"], "fa": ["طراحی قالب", "ماشین‌کاری"]}, "desc": {"en": ["Design and machining of a plastic injection mould."], "fa": ["طراحی و ماشین‌کاری قالب تزریق پلاستیک."]}, "imgs": [{"src": "p-mold.webp", "w": 735, "h": 820, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "12", "fa": "۱۲"}, "who": ["a"], "title": {"en": "Jet engine cutaway model", "fa": "ماکت برش‌خورده‌ی موتور جت"}, "year": {"en": "", "fa": ""}, "tags": {"en": ["Model making", "3D printing"], "fa": ["ماکت‌سازی", "پرینت سه‌بعدی"]}, "desc": {"en": ["A 3D-printed cutaway model of a jet engine for display and teaching."], "fa": ["ماکت برش‌خورده‌ی موتور جت برای نمایش و آموزش، ساخته‌شده با چاپ سه‌بعدی."]}, "imgs": [{"src": "p-maquette.webp", "w": 780, "h": 586, "cap": {"en": "", "fa": ""}}]}, {"n": {"en": "13", "fa": "۱۳"}, "who": ["h"], "title": {"en": "Cable-driven drawing robot", "fa": "ربات نقاش کابلی"}, "year": {"en": "2020", "fa": "۱۳۹۹"}, "tags": {"en": ["Cable robot", "Image processing", "Control"], "fa": ["ربات کابلی", "پردازش تصویر", "کنترل"]}, "desc": {"en": ["A drawing robot based on a cable-driven mechanism that moves a pen across the canvas by controlling cable lengths. It turns any photo into a line drawing and draws it on the canvas (shown here drawing a map of Iran).", "The interesting part was the algorithm that converts an image into a pen path, and the precise coordination of the cables to bring the pen to any point."], "fa": ["یک ربات نقاش بر پایه‌ی مکانیزم ربات‌های کابلی که قلم را با کنترل طول کابل‌ها در صفحه حرکت می‌دهد. این ربات می‌تواند هر عکس را به یک نقاشی سیاه‌قلم تبدیل کند و روی بوم بکشد (در تصویر، نقشه‌ی ایران را رسم کرده است).", "بخش جذاب پروژه، الگوریتم تبدیل تصویر به مسیر قلم و هماهنگی دقیق حرکت کابل‌ها برای رسیدن قلم به نقطه‌ی دلخواه بود."]}, "imgs": [{"src": "p-painter.webp", "w": 896, "h": 1344, "cap": {"en": "", "fa": ""}}]}], "people": {"h": {"en": "Hassan Nasiri Khonsari", "fa": "حسن نصیری خونساری", "av": "av-hassan.webp"}, "a": {"en": "Alireza Pirhaji", "fa": "علیرضا پیرحاجی", "av": "av-alireza.webp"}, "m": {"en": "Seyed Mostafa Banihashemi", "fa": "سید مصطفی بنی‌هاشمی", "av": "av-mostafa.webp"}}, "meta": {"title": {"en": "Entha Group — Mechanical Design, Fabrication & Robotics", "fa": "گروه فنی مهندسی انتها — طراحی و ساخت صنعتی و رباتیک"}, "desc": {"en": "Entha Group is a three-engineer team designing and building industrial machines, robots, welded structures and custom equipment — from concept to fabrication, quality control and delivery.", "fa": "گروه فنی مهندسی انتها، تیمی سه‌نفره از مهندسان مکانیک برای طراحی و ساخت ماشین‌آلات صنعتی، ربات، سازه‌های جوشی و تجهیزات سفارشی؛ از طراحی مفهومی تا ساخت، کنترل کیفیت و تحویل."}}, "brand": {"en": "Entha Group", "fa": "گروه فنی مهندسی انتها"}, "ui": {"view": {"en": "View ›", "fa": "مشاهده ›"}, "year": {"en": "", "fa": "سال "}, "imgs": {"en": "photos", "fa": "تصویر"}, "sending": {"en": "Sending…", "fa": "در حال ارسال…"}, "ok": {"en": "Your message has been sent. We'll get back to you soon.", "fa": "پیام شما ارسال شد. به‌زودی پاسخ می‌دهیم."}, "err": {"en": "Sending failed. Please try again or use email.", "fa": "ارسال انجام نشد. لطفاً دوباره تلاش کنید یا از ایمیل استفاده کنید."}, "net": {"en": "Sending failed. Please check your connection.", "fa": "ارسال انجام نشد. اتصال اینترنت را بررسی کنید."}}};
+const FA_D = s => String(s).replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[d]);
+let LANG = document.documentElement.lang;
+const tx = o => (o && typeof o === 'object') ? (o[LANG] ?? o.en) : o;
+
+function renderList(){
+  const list = document.getElementById('proj-list'); list.innerHTML = '';
+  D.projects.forEach(p=>{
+    const li = document.createElement('li');
+    li.className = 'prow'; li.tabIndex = 0; li.setAttribute('role','button');
+    const im = p.imgs[0], yr = tx(p.year);
+    const n = p.imgs.length > 1 ? (LANG==='fa' ? FA_D(p.imgs.length)+' '+D.ui.imgs.fa : p.imgs.length+' '+D.ui.imgs.en) : '';
+    const sub = [yr ? tx(D.ui.year)+yr : '', n].filter(Boolean).join(LANG==='fa' ? '، ' : ' · ');
+    const av = '<span class="who">' + p.who.map(k=>'<img class="av" src="'+D.people[k].av+'" alt="'+tx(D.people[k])+'" title="'+tx(D.people[k])+'" width="56" height="56" loading="lazy">').join('') + '</span>';
+    li.innerHTML = '<span class="pn">'+tx(p.n)+'</span>'+
+      '<img class="pthumb" src="'+im.src.replace('.webp','-t.webp')+'" alt="" loading="lazy" width="'+im.w+'" height="'+im.h+'">'+
+      '<div class="pinfo"><div class="pt-title">'+tx(p.title)+'</div>'+(sub?'<div class="pt-sub">'+sub+'</div>':'')+'</div>'+ av +
+      '<span class="pchev">'+tx(D.ui.view)+'</span>';
+    li.onclick = ()=>openProj(p);
+    li.onkeydown = e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openProj(p); } };
+    list.appendChild(li);
+  });
+}
+let CUR = null;
+function show(p,i){
+  const im = p.imgs[i], main = document.getElementById('pm-img'), cap = tx(im.cap);
+  main.src = im.src; main.alt = tx(p.title) + (cap ? ' — ' + cap : '');
+  document.getElementById('pm-cap').textContent = cap || '';
+  document.querySelectorAll('#pm-thumbs button').forEach((b,j)=>b.classList.toggle('on', j===i));
+}
+window.openProj = function(p){
+  CUR = p;
+  const th = document.getElementById('pm-thumbs');
+  th.innerHTML = p.imgs.length>1 ? p.imgs.map((im,i)=>'<button type="button" aria-label="'+(tx(im.cap)||('#'+(i+1)))+'"><img src="'+im.src.replace('.webp','-t.webp')+'" alt=""></button>').join('') : '';
+  th.querySelectorAll('button').forEach((b,i)=>b.onclick=()=>show(p,i));
+  show(p,0);
+  const yr = tx(p.year);
+  document.getElementById('pm-year').textContent = yr ? tx(D.ui.year)+yr : '';
+  document.getElementById('pm-title').textContent = tx(p.title);
+  document.getElementById('pm-desc').innerHTML = tx(p.desc).map(d=>'<p>'+d+'</p>').join('');
+  document.getElementById('pm-tags').innerHTML = tx(p.tags).map(t=>'<span>'+t+'</span>').join('');
+  document.getElementById('pm-who').innerHTML = p.who.map(k=>'<span><img src="'+D.people[k].av+'" alt="">'+tx(D.people[k])+'</span>').join('');
+  document.getElementById('pmodal').classList.add('show');
+  document.body.style.overflow='hidden';
+};
+window.closeProj = function(){ document.getElementById('pmodal').classList.remove('show'); document.body.style.overflow=''; CUR=null; };
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeProj(); });
+document.getElementById('pmodal').addEventListener('click', e=>{ if(e.target.id==='pmodal') closeProj(); });
+
+function applyLang(l){
+  LANG = l;
+  const h = document.documentElement;
+  h.lang = l; h.dir = l==='fa' ? 'rtl' : 'ltr';
+  document.title = D.meta.title[l];
+  document.querySelector('meta[name=description]').content = D.meta.desc[l];
+  document.querySelectorAll('[data-ph-en]').forEach(el=>el.placeholder = el.dataset['ph'+(l==='fa'?'Fa':'En')]);
+  document.querySelectorAll('[data-alt-en]').forEach(el=>el.alt = el.dataset['alt'+(l==='fa'?'Fa':'En')]);
+  document.querySelectorAll('img[data-p]').forEach(el=>{ const n = D.people[el.dataset.p][l]; el.alt = n; el.title = n; });
+  document.getElementById('yr').textContent = l==='fa' ? new Date().toLocaleDateString('fa-IR',{year:'numeric'}) : new Date().getFullYear();
+  renderList();
+  if(CUR) openProj(CUR);
+  try{ localStorage.setItem('entha-lang', l); }catch(e){}
+  spy();
+}
+document.getElementById('langBtn').addEventListener('click', ()=>applyLang(LANG==='en'?'fa':'en'));
+
+// scroll-spy
+const navEl = document.querySelector('nav');
+const spyLinks = [...document.querySelectorAll('.menu a[href^="#"]')];
+const spySections = spyLinks.map(a=>({a, el:document.getElementById(a.getAttribute('href').slice(1))})).filter(s=>s.el);
+function spy(){
+  const navH = navEl.offsetHeight + 24; let current = null;
+  for(const s of spySections){ if(window.scrollY >= s.el.offsetTop - navH) current = s; }
+  if(window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = spySections[spySections.length-1];
+  spyLinks.forEach(a=>a.classList.toggle('active', !!current && a===current.a));
+}
+window.addEventListener('scroll', spy, {passive:true}); window.addEventListener('resize', spy);
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click', e=>{
+    const t = document.getElementById(a.getAttribute('href').slice(1)); if(!t) return;
+    e.preventDefault();
+    window.scrollTo({top: t.getBoundingClientRect().top + window.pageYOffset - navEl.offsetHeight - 12, behavior:'smooth'});
+  });
+});
+const io = new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{threshold:0.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay=(i%3*0.08)+'s'; io.observe(el); });
+
+const cform = document.getElementById('contactForm');
+cform.addEventListener('submit', async e=>{
+  e.preventDefault();
+  const st = document.getElementById('cfStatus'), btn = cform.querySelector('.cf-btn'), old = btn.innerHTML;
+  st.textContent=''; st.className='cf-status'; btn.disabled=true; btn.textContent = tx(D.ui.sending);
+  try{
+    const res = await fetch(cform.action,{method:'POST', body:new FormData(cform), headers:{'Accept':'application/json'}});
+    if(res.ok){ cform.reset(); st.textContent = tx(D.ui.ok); st.className='cf-status ok'; }
+    else { st.textContent = tx(D.ui.err); st.className='cf-status err'; }
+  }catch(err){ st.textContent = tx(D.ui.net); st.className='cf-status err'; }
+  finally{ btn.disabled=false; btn.innerHTML = old; }
+});
+applyLang(LANG);
+</script>
+</body>
+</html>
