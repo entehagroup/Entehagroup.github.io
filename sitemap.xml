@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://enthagroup.github.io/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://enthagroup.github.io/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="fa" href="https://enthagroup.github.io/?lang=fa"/>
+    <loc>https://entehagroup.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://entehagroup.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://entehagroup.github.io/?lang=fa"/>
     <lastmod>2026-09-24</lastmod>
   </url>
-  <url><loc>https://enthagroup.github.io/entha-resume-en-v1.0.pdf</loc><lastmod>2026-09-24</lastmod></url>
-  <url><loc>https://enthagroup.github.io/entha-resume-fa-v1.0.pdf</loc><lastmod>2026-09-24</lastmod></url>
+  <url><loc>https://entehagroup.github.io/enteha-resume-en-v1.1.pdf</loc><lastmod>2026-09-24</lastmod></url>
+  <url><loc>https://entehagroup.github.io/enteha-resume-fa-v1.1.pdf</loc><lastmod>2026-09-24</lastmod></url>
 </urlset>
