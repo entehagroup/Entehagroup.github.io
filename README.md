@@ -1,4 +1,4 @@
-# Enteha Group — website (v1.3)
+# Enteha Group — website (v1.4)
 
 Includes both resume PDFs (English and Persian, Dubai font, fonts embedded).
 
@@ -26,5 +26,5 @@ Uses the same Formspree endpoint as the personal site. Messages from this site a
 with the subject line "Enteha Group website — new message" so they are easy to tell apart.
 
 ## Resume PDFs
-`enteha-resume-en-v1.3.pdf` and `enteha-resume-fa-v1.3.pdf` are linked from the hero buttons.
+`enteha-resume-en-v1.4.pdf` and `enteha-resume-fa-v1.4.pdf` are linked from the hero buttons.
 If you publish a new version, update the file names in `index.html` and `sitemap.xml`.
