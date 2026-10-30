@@ -28,3 +28,12 @@ with the subject line "Enteha Group website — new message" so they are easy to
 ## Resume PDFs
 `enteha-resume-en-v1.4.pdf` and `enteha-resume-fa-v1.4.pdf` are linked from the hero buttons.
 If you publish a new version, update the file names in `index.html` and `sitemap.xml`.
+
+## Logo
+`logo.png` (512 px, round, transparent corners) is used for Google and the apple-touch icon;
+`logo-96.webp` is the mark in the top bar; `favicon.png` / `favicon.ico` are the browser-tab icons.
+
+## Clips
+Clips are listed in `clips.js` (field guide at the top of that file). Each clip needs an MP4
+(`v-<slug>.mp4`, H.264, ideally under 10 MB) and a poster (`v-<slug>.jpg`, 540×960 for vertical)
+next to `index.html`. While the list is empty, the Clips section and its menu link are hidden.
