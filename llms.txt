@@ -1,0 +1,34 @@
+# Enteha Group (گروه فنی مهندسی انتها)
+
+> Enteha Group is an Iranian mechanical engineering group that designs and builds custom special-purpose machines, test rigs and industrial robots, automates production lines, and manufactures industrial parts to drawing. Based in Tehran and Isfahan, it works for clients across Iran. One-off orders are accepted and quotes are free (usually within 1–2 weeks).
+
+Key facts:
+
+- Scope: requirements, concept and detailed design, engineering analysis (FEA), fabrication, assembly, quality control, commissioning. The engineer who designs a machine also supervises its fabrication and assembly.
+- Past work: machines from 10 to 250 kg and structures of about 1–2 tonnes; 80 postal sorting robots built for Iran Post (generation 3 design produced in a run of 200 units); the first knee-prosthesis test rig made in Iran (6 DOF, ASTM F1223); industrial FDM 3D printers up to 500 × 500 × 400 mm.
+- Typical timeline: from 1–2 weeks to about a year; a simple special-purpose machine takes 1–2 months of design and 1–2 months of fabrication.
+- Automation: Delta and Siemens PLC programming, HMI, servo and stepper motion control, weighing and measurement systems, control cabinets, integration with existing equipment.
+- Parts: CNC machining, laser cutting, bending and rolling, welded structures in steel and 316 stainless, pressure vessels and enclosures, plastic injection moulds, dimensional and weld inspection (GD&T), reverse engineering. Drawings accepted in any format.
+- Support: faults in machines Enteha designed and built are fixed for 2 months after delivery; longer warranty, repairs and upgrades by contract.
+- Industries: medical and dental devices, postal and logistics, additive manufacturing, universities and research centres, service robotics.
+- Core team: Hassan Nasiri Khonsari (Technical & Design Director), Alireza Pirhaji (Manufacturing & Quality Lead), Seyed Mostafa Banihashemi (Project & R&D Lead); degrees from Sharif University of Technology, IUST, K. N. Toosi University and Tarbiat Modares University.
+- Recognition: Alborz Elite Prize, Khwarizmi Youth Festival (twice), Iran Industrial Design Festival, Sharif Science and Technology Park; papers in Scientific Reports and the International Journal of Mechanical Sciences.
+- Contact: phone +98 996 223 3898, email Nasiri2752@Gmail.com, Instagram @enteha.eng, website https://entehagroup.github.io/
+
+## Services (English)
+
+- [Custom special-purpose machines and industrial robots](https://entehagroup.github.io/en/custom-machines.html): design and build of special-purpose machines, test rigs, industrial, service and mobile robots, CNC machines and industrial 3D printers.
+- [Production line automation](https://entehagroup.github.io/en/automation.html): control design, Delta and Siemens PLC, HMI, motion control, weighing, control cabinets.
+- [Industrial parts manufacturing](https://entehagroup.github.io/en/parts-manufacturing.html): parts and assemblies to drawing, one-off or in series, in Tehran and Isfahan.
+
+## خدمات (فارسی)
+
+- [طراحی و ساخت دستگاه خاص‌منظوره و ربات صنعتی سفارشی](https://entehagroup.github.io/custom-machines.html)
+- [اتوماسیون خط تولید و طراحی سیستم کنترل](https://entehagroup.github.io/automation.html)
+- [ساخت قطعات صنعتی طبق نقشه، تک‌نمونه و تیراژی](https://entehagroup.github.io/parts-manufacturing.html)
+
+## Optional
+
+- [Home page, projects and team](https://entehagroup.github.io/?lang=en)
+- [Company resume (English, PDF)](https://entehagroup.github.io/enteha-resume-en-v1.4.pdf)
+- [رزومه‌ی گروه (فارسی، PDF)](https://entehagroup.github.io/enteha-resume-fa-v1.4.pdf)
