@@ -24,7 +24,7 @@ window.CLIPS = [
   "desc_en": "Caught out on assembly day? A small interference between parts can stop the whole assembly. Outsource your parts to Enteha and have dimensions and fit checked before delivery.",
   "video": "v-outsourcing.mp4",
   "poster": "v-outsourcing.jpg",
-  "d": "2026-10-30",
+  "d": "2026-10-31",
   "vertical": true
  }
 ];
