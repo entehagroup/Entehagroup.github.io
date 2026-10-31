@@ -71,6 +71,7 @@ nav .wrap{display:flex; align-items:center; justify-content:space-between; gap:1
 @media(min-width:1921px){ .hero .cover{-webkit-mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent); mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent);} }
 .hero .profile{display:grid; grid-template-columns:1fr auto; gap:56px; align-items:center; padding:36px 24px 80px; position:relative; z-index:2;}
 .eyebrow{display:inline-block; background:rgba(185,113,60,0.18); color:var(--accent2); padding:6px 16px; border-radius:30px; font-size:13px; font-weight:600; margin-bottom:18px;}
+.hero-logo{display:block; width:128px; height:128px; border-radius:50%; margin-bottom:22px; box-shadow:0 0 0 6px rgba(255,255,255,0.07),0 26px 50px -22px rgba(0,0,0,0.8);}
 .hero h1{font-size:clamp(32px,5vw,50px); font-weight:800; line-height:1.25; letter-spacing:-1px; margin-bottom:10px;}
 html[lang=en] .hero h1{letter-spacing:-1.5px;}
 .hero .headline{font-size:clamp(18px,2.2vw,22px); font-weight:600; margin-bottom:18px; line-height:1.6; text-align:start;}
@@ -287,6 +288,7 @@ section.clips{padding-top:0;}
   .menu::-webkit-scrollbar{display:none;}
   .nav-phone{display:none;}
   .hero .profile{grid-template-columns:1fr; gap:22px; padding:24px 20px 56px; text-align:center; justify-items:center;}
+  .hero-logo{margin-inline:auto; width:112px; height:112px;}
   .hero .trio{order:-1;} .trio img{width:104px; height:104px;} .trio img + img{margin-inline-start:-24px;}
   .hero .headline{text-align:center;} .hero .lead{text-align:justify; text-align-last:center; margin-inline:auto;}
   .btns{justify-content:center;}
@@ -311,6 +313,7 @@ section.clips{padding-top:0;}
     <img src="cover.jpg" width="2172" height="724" data-alt-en="Machines and robots designed and built by the team" data-alt-fa="نمونه‌ای از ماشین‌ها و ربات‌هایی که طراحی و ساخته‌ایم" alt="Machines and robots designed and built by the team" fetchpriority="high"></picture></div>
   <div class="wrap profile">
     <div class="intro">
+      <img class="hero-logo" src="logo-256.webp" srcset="logo-256.webp 1x, logo-512.webp 2x" width="128" height="128" data-alt-en="Enteha Group logo" data-alt-fa="لوگوی گروه فنی مهندسی انتها" alt="Enteha Group logo" fetchpriority="high">
       <span class="eyebrow"><span data-l="en">Mechanical design · Fabrication · Robotics</span><span data-l="fa">طراحی مکانیک · ساخت · رباتیک</span></span>
       <h1><span data-l="en">Enteha Group</span><span data-l="fa">گروه فنی مهندسی انتها</span></h1>
       <p class="headline"><span data-l="en">Industrial robots, <b>custom machinery</b> and automation — designed and built by one team.</span><span data-l="fa">ربات‌های صنعتی، <b>ماشین‌آلات سفارشی</b> و اتوماسیون؛ طراحی و ساخت در یک تیم.</span></p>
