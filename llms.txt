@@ -1,34 +1,68 @@
 # Enteha Group (گروه فنی مهندسی انتها)
 
-> Enteha Group is an Iranian mechanical engineering group that designs and builds custom special-purpose machines, test rigs and industrial robots, automates production lines, and manufactures industrial parts to drawing. Based in Tehran and Isfahan, it works for clients across Iran. One-off orders are accepted and quotes are free (usually within 1–2 weeks).
+> Enteha Group (گروه فنی مهندسی انتها) is a mechanical engineering design-and-build group based in Tehran and Isfahan, Iran; it is not related to other businesses that use the word “Enteha” (انتها, “end”) in their names. It designs and builds special-purpose machines, test rigs and industrial robots, automates production lines, and manufactures industrial parts to drawing, for clients across Iran. One-off orders are accepted and quotes are free (usually within 1–2 weeks).
 
-Key facts:
+> گروه فنی مهندسی انتها یک گروه طراحی و ساخت مهندسی مکانیک در تهران و اصفهان است و با کسب‌وکارهای دیگری که واژه‌ی «انتها» در نامشان است ارتباطی ندارد.
 
-- Scope: requirements, concept and detailed design, engineering analysis (FEA), fabrication, assembly, quality control, commissioning. The engineer who designs a machine also supervises its fabrication and assembly.
-- Past work: machines from 10 to 250 kg and structures of about 1–2 tonnes; 80 postal sorting robots built for Iran Post (generation 3 design produced in a run of 200 units); the first knee-prosthesis test rig made in Iran (6 DOF, ASTM F1223); industrial FDM 3D printers up to 500 × 500 × 400 mm.
-- Typical timeline: from 1–2 weeks to about a year; a simple special-purpose machine takes 1–2 months of design and 1–2 months of fabrication.
-- Automation: Delta and Siemens PLC programming, HMI, servo and stepper motion control, weighing and measurement systems, control cabinets, integration with existing equipment.
-- Parts: CNC machining, laser cutting, bending and rolling, welded structures in steel and 316 stainless, pressure vessels and enclosures, plastic injection moulds, dimensional and weld inspection (GD&T), reverse engineering. Drawings accepted in any format.
+## Key facts
+
+- Based in Tehran and Isfahan, Iran; serves clients across Iran. Website: https://entehagroup.ir/
+- Core team: Hassan Nasiri Khonsari (Technical & Design Director), Alireza Pirhaji (Manufacturing & Quality Lead), Seyed Mostafa Banihashemi (Project & R&D Lead); degrees from Sharif University of Technology, IUST, K. N. Toosi University and Tarbiat Modares University; plus a network of partner workshops and specialists.
+- Scope: requirements, concept and detailed design, engineering analysis (FEA), fabrication, assembly, quality control and commissioning. The engineer who designs a machine also supervises its fabrication and assembly.
+- Track record: 80 postal sorting robots built for Iran Post (50 for Tehran, 30 for Kermanshah, 2020–2025), with a third-generation design produced as a 200-unit series; a 6-DOF knee prosthesis test rig to ASTM F1223, the first of its kind in Iran (2021); five industrial FDM 3D printers up to 500 × 500 × 400 mm (2020–2023); a fleet of seven waiter robots (2021); a dual-purpose CNC with a ~100 × 100 cm bed (2023).
+- Past work ranges from machines of 10–250 kg to structures of about 1–2 tonnes.
+- Typical timelines: 1–2 weeks to about a year; a simple special-purpose machine takes 1–2 months of design and 1–2 months of fabrication. Quotes are free and take 1–2 weeks.
+- Automation: Delta and Siemens PLC, HMI, servo and stepper motion control, weighing and measurement, control cabinets, integration with existing equipment.
+- Parts: CNC machining, laser cutting, bending and rolling, welded structures in steel and 316 stainless, pressure vessels and enclosures, plastic injection moulds, dimensional and weld inspection (GD&T), reverse engineering; drawings accepted in any format.
 - Support: faults in machines Enteha designed and built are fixed for 2 months after delivery; longer warranty, repairs and upgrades by contract.
 - Industries: medical and dental devices, postal and logistics, additive manufacturing, universities and research centres, service robotics.
-- Core team: Hassan Nasiri Khonsari (Technical & Design Director), Alireza Pirhaji (Manufacturing & Quality Lead), Seyed Mostafa Banihashemi (Project & R&D Lead); degrees from Sharif University of Technology, IUST, K. N. Toosi University and Tarbiat Modares University.
-- Recognition: Alborz Elite Prize, Khwarizmi Youth Festival (twice), Iran Industrial Design Festival, Sharif Science and Technology Park; papers in Scientific Reports and the International Journal of Mechanical Sciences.
-- Contact: phone +98 996 223 3898, email Nasiri2752@Gmail.com, Instagram @enteha.eng, website https://entehagroup.ir/
+- Awards: Laureate, 64th Alborz Elite Prize (2026); 2nd place, 26th Khwarizmi Youth Festival (2024); 2nd place, 24th Khwarizmi Youth Festival (2022); best design, 4th Iran Industrial Design Festival (2024); top startup, Sharif Science & Technology Park (2024).
+- Publication: “Frictional behavior between bone and additively manufactured Ti6Al4V implants is affected by bone density and surface texture under varying loads”, Scientific Reports, 2025 (https://doi.org/10.1038/s41598-025-25586-0).
 
-## Services (English)
+## Pages (English)
 
-- [Custom special-purpose machines and industrial robots](https://entehagroup.ir/en/custom-machines.html): design and build of special-purpose machines, test rigs, industrial, service and mobile robots, CNC machines and industrial 3D printers.
-- [Production line automation](https://entehagroup.ir/en/automation.html): control design, Delta and Siemens PLC, HMI, motion control, weighing, control cabinets.
-- [Industrial parts manufacturing](https://entehagroup.ir/en/parts-manufacturing.html): parts and assemblies to drawing, one-off or in series, in Tehran and Isfahan.
+- [Home](https://entehagroup.ir/): overview
+- [Services](https://entehagroup.ir/services.html): service lines, process and FAQ
+- [Custom special-purpose machines and industrial robots](https://entehagroup.ir/custom-machines.html): A machine built for your process — from requirements and concept design to fabrication, assembly and commissioning.
+- [Production line automation and control system design](https://entehagroup.ir/automation.html): Automating the manual and semi-automatic steps of your line: control design, PLC programming, HMI and integration with existing equipment.
+- [Industrial parts made to your drawings — one-off or in series](https://entehagroup.ir/parts-manufacturing.html): Parts and assemblies made to your drawings, one-off or in series, with our own quality control before delivery.
+- [Projects](https://entehagroup.ir/projects.html): all projects
+- [About](https://entehagroup.ir/about.html): team, honors, publications, skills, experience
 
-## خدمات (فارسی)
+## Projects
 
-- [طراحی و ساخت دستگاه خاص‌منظوره و ربات صنعتی سفارشی](https://entehagroup.ir/custom-machines.html)
-- [اتوماسیون خط تولید و طراحی سیستم کنترل](https://entehagroup.ir/automation.html)
-- [ساخت قطعات صنعتی طبق نقشه، تک‌نمونه و تیراژی](https://entehagroup.ir/parts-manufacturing.html)
+- [Postal sorting robots](https://entehagroup.ir/projects/postal-sorting-robots.html): 80 autonomous parcel-sorting robots built for Iran Post; the third-generation design went into production as a 200-unit series.
+- [Knee prosthesis constraint & stability test rig](https://entehagroup.ir/projects/knee-prosthesis-test-rig.html): A six-degree-of-freedom test rig for total knee prostheses to ASTM F1223 — the first of its kind in Iran.
+- [DMD powder feeder](https://entehagroup.ir/projects/dmd-powder-feeder.html): A powder feeder for laser direct metal deposition, controlling the feed rate between 1 and 100 g/min.
+- [Industrial FDM 3D printers](https://entehagroup.ir/projects/industrial-3d-printers.html): Five FDM printers designed and built from scratch, up to an industrial machine with a 500 × 500 × 400 mm build volume.
+- [Rail-guided platform over a test pool](https://entehagroup.ir/projects/rail-guided-test-platform.html): A rail-guided platform and cabin over a water-treatment test pool: structural design, fabrication and on-site installation.
+- [Cable-driven rehabilitation robot](https://entehagroup.ir/projects/cable-rehabilitation-robot.html): A cable-driven robot to improve postural alignment in children with cerebral palsy: design, fabrication and control.
+- [Waiter robots](https://entehagroup.ir/projects/waiter-robots.html): A fleet of seven food delivery and serving robots that stay stable on uneven restaurant floors.
+- [Dual-purpose industrial CNC](https://entehagroup.ir/projects/dual-purpose-cnc.html): A modular CNC with a bed of about 100 × 100 cm for wood and light metals that becomes a 3D printer with a head swap.
+- [Dental aligners & veneers](https://entehagroup.ir/projects/dental-aligners.html): Orthodontic aligners and removable dental veneers produced by resin (DLP) 3D printing.
+- [Conveyor-belt FDM 3D printer](https://entehagroup.ir/projects/conveyor-3d-printer.html): An FDM printer with a conveyor-belt bed for continuous printing of long parts and batches.
+- [Plastic injection mould](https://entehagroup.ir/projects/injection-mould.html): Design and machining of a plastic injection mould.
+- [Jet engine cutaway model](https://entehagroup.ir/projects/jet-engine-model.html): A 3D-printed cutaway model of a jet engine for display and teaching.
+- [Cable-driven drawing robot](https://entehagroup.ir/projects/cable-drawing-robot.html): A cable-driven drawing robot that turns any photo into a line drawing and draws it on canvas.
+
+## صفحه‌ها (فارسی)
+
+- [صفحه‌ی اصلی](https://entehagroup.ir/fa/)
+- [خدمات](https://entehagroup.ir/fa/services.html)
+- [طراحی و ساخت دستگاه خاص‌منظوره و ربات صنعتی سفارشی](https://entehagroup.ir/fa/custom-machines.html)
+- [اتوماسیون خط تولید و طراحی سیستم کنترل](https://entehagroup.ir/fa/automation.html)
+- [ساخت قطعات صنعتی طبق نقشه، تک‌نمونه و تیراژی](https://entehagroup.ir/fa/parts-manufacturing.html)
+- [نمونه‌کارها](https://entehagroup.ir/fa/projects.html)
+- [درباره و تیم](https://entehagroup.ir/fa/about.html)
+
+## Contact
+
+- Phone: +98 996 223 3898
+- Email: Nasiri2752@Gmail.com
+- Instagram: https://www.instagram.com/enteha.eng/
+- Contact form: https://entehagroup.ir/#contact
 
 ## Optional
 
-- [Home page, projects and team](https://entehagroup.ir/?lang=en)
 - [Company resume (English, PDF)](https://entehagroup.ir/enteha-resume-en-v1.4.pdf)
 - [رزومه‌ی گروه (فارسی، PDF)](https://entehagroup.ir/enteha-resume-fa-v1.4.pdf)
