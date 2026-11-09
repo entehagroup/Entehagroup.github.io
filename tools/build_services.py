@@ -12,7 +12,7 @@ Edit the text in PAGES / COMMON below, then run from the repository root:
 import json
 import os
 
-SITE = 'https://entehagroup.github.io/'
+SITE = 'https://entehagroup.ir/'
 UPDATED = {'iso': '2026-10-31', 'fa': '۹ آبان ۱۴۰۵', 'en': '31 October 2026'}
 PHONE = '+989962233898'
 PHONE_TXT = {'fa': '۰۹۹۶۲۲۳۳۸۹۸', 'en': '+98 996 223 3898'}

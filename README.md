@@ -9,11 +9,11 @@ Static bilingual site (English default, Persian toggle) for GitHub Pages.
 2. Inside it, create a **public** repository named exactly `entehagroup.github.io`.
 3. Upload every file in this folder to the repository root (keep `index.html` at the top level).
 4. Settings → Pages → Source: *Deploy from a branch* → `main` / root.
-5. The site goes live at https://entehagroup.github.io/ within a few minutes.
+5. The site goes live at https://entehagroup.ir/ (custom domain, see "Domain" below).
 
 ## Language
 - Default is English. The globe button switches language; the visitor's choice is remembered.
-- Direct links: `?lang=en` or `?lang=fa` (e.g. https://entehagroup.github.io/?lang=fa).
+- Direct links: `?lang=en` or `?lang=fa` (e.g. https://entehagroup.ir/?lang=fa).
 
 ## Renaming the group later
 The name appears in `index.html`, `robots.txt`, `sitemap.xml`. Replace:
@@ -52,3 +52,10 @@ All their text lives in `tools/build_services.py`; edit it there and rebuild:
 ## AI search
 `llms.txt` is a plain summary of the group and its services for AI assistants; keep its facts in
 step with the service pages. `robots.txt` explicitly allows the AI crawlers.
+
+## Domain
+The site is served at `https://entehagroup.ir` (the `CNAME` file in the root). DNS is on Cloudflare:
+four A records for `@` (185.199.108.153, .109, .110, .111) and a CNAME `www` → `entehagroup.github.io`,
+all **DNS only** (grey cloud; with the proxy on, GitHub cannot issue the HTTPS certificate).
+GitHub redirects `entehagroup.github.io` to the domain page by page. To go back to the github.io
+address, remove the domain in Settings → Pages.

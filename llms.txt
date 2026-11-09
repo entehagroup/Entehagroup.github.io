@@ -13,22 +13,22 @@ Key facts:
 - Industries: medical and dental devices, postal and logistics, additive manufacturing, universities and research centres, service robotics.
 - Core team: Hassan Nasiri Khonsari (Technical & Design Director), Alireza Pirhaji (Manufacturing & Quality Lead), Seyed Mostafa Banihashemi (Project & R&D Lead); degrees from Sharif University of Technology, IUST, K. N. Toosi University and Tarbiat Modares University.
 - Recognition: Alborz Elite Prize, Khwarizmi Youth Festival (twice), Iran Industrial Design Festival, Sharif Science and Technology Park; papers in Scientific Reports and the International Journal of Mechanical Sciences.
-- Contact: phone +98 996 223 3898, email Nasiri2752@Gmail.com, Instagram @enteha.eng, website https://entehagroup.github.io/
+- Contact: phone +98 996 223 3898, email Nasiri2752@Gmail.com, Instagram @enteha.eng, website https://entehagroup.ir/
 
 ## Services (English)
 
-- [Custom special-purpose machines and industrial robots](https://entehagroup.github.io/en/custom-machines.html): design and build of special-purpose machines, test rigs, industrial, service and mobile robots, CNC machines and industrial 3D printers.
-- [Production line automation](https://entehagroup.github.io/en/automation.html): control design, Delta and Siemens PLC, HMI, motion control, weighing, control cabinets.
-- [Industrial parts manufacturing](https://entehagroup.github.io/en/parts-manufacturing.html): parts and assemblies to drawing, one-off or in series, in Tehran and Isfahan.
+- [Custom special-purpose machines and industrial robots](https://entehagroup.ir/en/custom-machines.html): design and build of special-purpose machines, test rigs, industrial, service and mobile robots, CNC machines and industrial 3D printers.
+- [Production line automation](https://entehagroup.ir/en/automation.html): control design, Delta and Siemens PLC, HMI, motion control, weighing, control cabinets.
+- [Industrial parts manufacturing](https://entehagroup.ir/en/parts-manufacturing.html): parts and assemblies to drawing, one-off or in series, in Tehran and Isfahan.
 
 ## خدمات (فارسی)
 
-- [طراحی و ساخت دستگاه خاص‌منظوره و ربات صنعتی سفارشی](https://entehagroup.github.io/custom-machines.html)
-- [اتوماسیون خط تولید و طراحی سیستم کنترل](https://entehagroup.github.io/automation.html)
-- [ساخت قطعات صنعتی طبق نقشه، تک‌نمونه و تیراژی](https://entehagroup.github.io/parts-manufacturing.html)
+- [طراحی و ساخت دستگاه خاص‌منظوره و ربات صنعتی سفارشی](https://entehagroup.ir/custom-machines.html)
+- [اتوماسیون خط تولید و طراحی سیستم کنترل](https://entehagroup.ir/automation.html)
+- [ساخت قطعات صنعتی طبق نقشه، تک‌نمونه و تیراژی](https://entehagroup.ir/parts-manufacturing.html)
 
 ## Optional
 
-- [Home page, projects and team](https://entehagroup.github.io/?lang=en)
-- [Company resume (English, PDF)](https://entehagroup.github.io/enteha-resume-en-v1.4.pdf)
-- [رزومه‌ی گروه (فارسی، PDF)](https://entehagroup.github.io/enteha-resume-fa-v1.4.pdf)
+- [Home page, projects and team](https://entehagroup.ir/?lang=en)
+- [Company resume (English, PDF)](https://entehagroup.ir/enteha-resume-en-v1.4.pdf)
+- [رزومه‌ی گروه (فارسی، PDF)](https://entehagroup.ir/enteha-resume-fa-v1.4.pdf)
