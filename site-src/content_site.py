@@ -42,7 +42,7 @@ UI = {
   "related": "خدمات دیگر انتها", "process": "مراحل کار", "work": "نمونه‌کارهای مرتبط", "faq": "پرسش‌های متداول",
   "glance": "در یک نگاه", "logo_alt": "لوگوی گروه فنی مهندسی انتها", "cover_alt": "نمونه‌ای از ماشین‌ها و ربات‌هایی که گروه انتها طراحی و ساخته است",
   "photo": "تصویر ", "close": "بستن", "prev_img": "قبلی", "next_img": "بعدی", "linkedin": "لینکدین",
-  "view_paper": "مشاهده‌ی مقاله ↗", "published": "سال انتشار", "our_role": "نقش ما",
+  "view_paper": "مشاهده‌ی مقاله ↗", "videos": "ویدیوهای پروژه", "published": "سال انتشار", "our_role": "نقش ما",
  },
  "en": {
   "nav": [("services", "Services"), ("projects", "Projects"), ("about", "About & team")],
@@ -61,7 +61,7 @@ UI = {
   "related": "Other Enteha services", "process": "How we work", "work": "Related projects", "faq": "Frequently asked questions",
   "glance": "At a glance", "logo_alt": "Enteha Group logo", "cover_alt": "Machines and robots designed and built by Enteha Group",
   "photo": "Photo ", "close": "Close", "prev_img": "Previous", "next_img": "Next", "linkedin": "LinkedIn",
-  "view_paper": "View paper ↗", "published": "Published", "our_role": "Our role",
+  "view_paper": "View paper ↗", "videos": "Project videos", "published": "Published", "our_role": "Our role",
  },
 }
 
@@ -157,11 +157,11 @@ FAQ = {
 # ---------------------------------------------------------------- صفحه‌ی نمونه‌کارها و درباره
 PROJECTS_PAGE = {
  "fa": {"title": "نمونه‌کارهای گروه فنی مهندسی انتها: ربات، دستگاه خاص‌منظوره، اتوماسیون و ساخت",
-        "desc": "۱۳ پروژه‌ی طراحی و ساخت اعضای گروه انتها: ربات‌های سورتر پستی، دستگاه تست پروتز زانو، پرینترهای سه‌بعدی صنعتی، CNC، ربات‌های گارسون، سازه‌ی ریلی و قالب تزریق.",
+        "desc": "۱۴ پروژه‌ی طراحی و ساخت اعضای گروه انتها: ربات‌های سورتر پستی، دستگاه تست پروتز زانو، شکل‌دهی چرخشی CNC بدنه‌ی کتری، پرینترهای سه‌بعدی صنعتی، CNC، ربات‌های گارسون، سازه‌ی ریلی و قالب تزریق.",
         "kk": "نمونه‌کارها", "h1": "نمونه‌کارها",
         "lead": "پروژه‌هایی که اعضای گروه طراحی کرده و ساخته‌اند؛ هر کدام صفحه‌ای با تصویرها، جزئیات فنی و انجام‌دهنده‌ی کار دارد."},
  "en": {"title": "Enteha Group projects: robots, special-purpose machines, automation and fabrication",
-        "desc": "13 design-and-build projects by Enteha's members: postal sorting robots, a knee prosthesis test rig, industrial 3D printers, a CNC, waiter robots, a rail-guided structure and an injection mould.",
+        "desc": "14 design-and-build projects by Enteha's members: postal sorting robots, a knee prosthesis test rig, CNC spinning of kettle bodies, industrial 3D printers, a CNC, waiter robots, a rail-guided structure and an injection mould.",
         "kk": "Projects", "h1": "Projects",
         "lead": "Projects our members have designed and built; each has a page with photos, technical details and who did the work."},
 }
@@ -1263,6 +1263,7 @@ WHY = {
 # slug را بعد از انتشار عوض نکنید (آدرس صفحه و شناسه‌ی آمار است).
 # imgs: [فایل، عرض، ارتفاع، زیرنویس فارسی، زیرنویس انگلیسی]؛ هر عکس یک نسخه‌ی کوچک -t.webp هم لازم دارد.
 # service: خدمت مرتبط (slug یکی از SERVICES). short: یک جمله برای کارت و پیش‌نمایش.
+# videos (اختیاری): ویدیوهای روی خود سایت؛ MP4 با H.264 و -movflags +faststart، پوستر JPG، w و h ابعاد ویدیو.
 PROJECTS = [
  {
   "slug": "postal-sorting-robots",
@@ -1319,6 +1320,48 @@ PROJECTS = [
    ],
    "tags": ["Medical devices", "Automation", "ASTM F1223"],
   },
+ },
+ {
+  "slug": "cnc-kettle-spinning",
+  "date": "2019",
+  "service": "automation",
+  "who": ["h"],
+  "year": {"fa": "۱۳۹۸ تا ۱۳۹۹", "en": "2019–2020"},
+  "imgs": [
+   ["p-kettle-1.webp", 693, 520, "نمونه‌های شکل‌گرفته در کارگاه", "Kettle bodies formed in the workshop"],
+   ["p-kettle-2.webp", 693, 520, "آزمون مسیرها روی قطعه‌ی واقعی", "Testing the toolpaths on a real part"],
+   ["p-kettle-3.webp", 693, 520, "طراحی مسیرهای مرحله‌ای در SolidCAM", "Step-by-step toolpaths in SolidCAM"],
+  ],
+  "fa": {
+   "title": "شکل‌دهی چرخشی CNC بدنه‌ی کتری",
+   "short": "طراحی مسیرهای مرحله‌ای شکل‌دهی در <bdi>SolidCAM</bdi> و آزمون آن‌ها روی دستگاه <bdi>CNC</bdi> کارگاه، برای خودکار کردن شکل‌دهی بدنه‌ی کتری که پیش‌تر دستی انجام می‌شد.",
+   "desc": [
+    "بدنه‌ی کتری از ورق فلزی به ضخامت ۰٫۷ میلی‌متر، با شکل‌دهی چرخشی روی قالب ساخته می‌شود؛ کاری که در کارگاه دستی و با مهارت کارگر انجام می‌شد. در این پروژه، مسیر حرکت غلتک مرحله‌به‌مرحله در <bdi>SolidWorks</bdi> و <bdi>SolidCAM</bdi> طراحی و شبیه‌سازی شد و هر مرحله به‌صورت برنامه‌ی <bdi>G-Code</bdi> جداگانه روی دستگاه <bdi>CNC</bdi> کارگاه اجرا شد؛ تا اگر مرحله‌ای درست پیش نرفت، کار از همان مرحله ادامه پیدا کند. فرم هدف از اسکن سه‌بعدی نمونه‌ی مرجع گرفته شد.",
+    "آزمون‌های کارگاهی نشان داد کیفیت قطعه بیش از همه به نیروی مرغک پشت کتری و درست نشستن قالب هفت‌تکه بستگی دارد؛ کمبود هر کدام لرزش ایجاد می‌کرد و لبه را پاره می‌کرد. برای جبران برگشت فنری ورق، ابزار کمی جلوتر از پروفیل اسکن‌شده حرکت می‌کند و پس از ترک قطعه ۵ میلی‌متر بالا می‌رود تا به لبه‌ی برگشته برخورد نکند. انحنای مسیرها هم نرم و بدون شکستگی طراحی شد.",
+   ],
+   "tags": ["شکل‌دهی چرخشی ورق", "<bdi>SolidCAM</bdi>", "<bdi>CNC</bdi>"],
+  },
+  "en": {
+   "title": "CNC spinning of kettle bodies",
+   "short": "Step-by-step forming toolpaths designed in SolidCAM and tested on the workshop's CNC machine, to automate kettle-body forming that used to be done by hand.",
+   "desc": [
+    "Kettle bodies are made by spinning 0.7 mm sheet metal over a mandrel — work that the workshop did by hand and that depended on the operator's skill. In this project the roller's path was designed and simulated step by step in SolidWorks and SolidCAM, and each step ran as a separate G-code program on the workshop's CNC machine, so that if one step went wrong the work could resume from that step. The target shape came from a 3D scan of the reference sample.",
+    "Workshop tests showed that part quality depends above all on the tailstock force behind the kettle and on seating the seven-piece mandrel correctly; a shortfall in either caused vibration and tore the rim. To compensate for the sheet's springback, the tool runs slightly past the scanned profile and lifts 5 mm after leaving the part so it does not hit the rim as it springs back. The toolpath curves were kept smooth, with no sharp breaks.",
+   ],
+   "tags": ["Metal spinning", "SolidCAM", "CNC"],
+  },
+  "videos": [
+   {"id": "kettle-cnc", "file": "v-kettle.mp4", "poster": "v-kettle.jpg", "w": 1280, "h": 720, "date": "2020-08-29", "duration": "PT1M30S",
+    "fa": {"title": "شکل‌دهی بدنه‌ی کتری: از طراحی مسیر ابزار تا آزمون در کارگاه",
+           "desc": "طراحی و شبیه‌سازی مسیرها در SolidCAM، اجرای مرحله‌به‌مرحله روی دستگاه، تنظیم مرغک و قالب، و نمونه‌های شکل‌گرفته."},
+    "en": {"title": "Forming a kettle body: from toolpath design to workshop testing",
+           "desc": "Toolpath design and simulation in SolidCAM, step-by-step runs on the machine, tailstock and mandrel set-up, and the finished samples."}},
+   {"id": "kettle-manual", "file": "v-kettle-manual.mp4", "poster": "v-kettle-manual.jpg", "w": 352, "h": 640, "date": "2020-08-27", "duration": "PT31S",
+    "fa": {"title": "روش دستی، برای مقایسه",
+           "desc": "شکل‌دهی دستی بدنه با ابزار اهرمی؛ روشی وابسته به مهارت کارگر که هدف این پروژه خودکار کردنش بود."},
+    "en": {"title": "The manual method, for comparison",
+           "desc": "Forming the body by hand with a lever tool — the skill-dependent step this project set out to automate."}},
+  ],
  },
  {
   "slug": "dmd-powder-feeder",

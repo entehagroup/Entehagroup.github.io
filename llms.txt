@@ -33,6 +33,7 @@
 
 - [Postal sorting robots](https://entehagroup.ir/projects/postal-sorting-robots.html): 80 autonomous parcel-sorting robots built for Iran Post; the third-generation design went into production as a 200-unit series.
 - [Knee prosthesis constraint & stability test rig](https://entehagroup.ir/projects/knee-prosthesis-test-rig.html): A six-degree-of-freedom test rig for total knee prostheses to ASTM F1223 — the first of its kind in Iran.
+- [CNC spinning of kettle bodies](https://entehagroup.ir/projects/cnc-kettle-spinning.html): Step-by-step forming toolpaths designed in SolidCAM and tested on the workshop's CNC machine, to automate kettle-body forming that used to be done by hand.
 - [DMD powder feeder](https://entehagroup.ir/projects/dmd-powder-feeder.html): A powder feeder for laser direct metal deposition, controlling the feed rate between 1 and 100 g/min.
 - [Industrial FDM 3D printers](https://entehagroup.ir/projects/industrial-3d-printers.html): Five FDM printers designed and built from scratch, up to an industrial machine with a 500 × 500 × 400 mm build volume.
 - [Rail-guided platform over a test pool](https://entehagroup.ir/projects/rail-guided-test-platform.html): A rail-guided platform and cabin over a water-treatment test pool: structural design, fabrication and on-site installation.
