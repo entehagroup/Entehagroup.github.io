@@ -573,6 +573,21 @@ def build_project(p, i, L):
     rows.append((u["field"], "، ".join(d["tags"]) if L == "fa" else ", ".join(d["tags"])))
     rows.append((u["service"], f'<a href="{url(svc["slug"], L)}" data-service="{svc["slug"]}" data-place="project">{svc[L]["nav"]}</a>'))
     facts = "".join(f"<tr><th>{a}</th><td>{b}</td></tr>" for a, b in rows)
+    vids = ""
+    if p.get("videos"):
+        cards = ""
+        for v in p["videos"]:
+            vd = v[L]
+            cls = " v" if v["h"] > v["w"] else ""
+            cards += (f'<article class="m-card{cls}"><div class="m-vid{cls}"><video controls playsinline preload="none" poster="/{v["poster"]}" data-id="{v["id"]}" '
+                      f'aria-label="{esc(vd["title"])}"><source src="/{v["file"]}" type="video/mp4"></video></div>'
+                      f'<div class="m-bd"><h3>{vd["title"]}</h3><p class="m-desc">{vd["desc"]}</p></div></article>')
+            nodes.append({"@type": "VideoObject", "@id": absu(path) + "#video-" + v["id"], "name": vd["title"], "description": vd["desc"],
+                          "thumbnailUrl": BASE + "/" + v["poster"], "contentUrl": BASE + "/" + v["file"], "uploadDate": v["date"],
+                          "duration": v["duration"], "width": v["w"], "height": v["h"], "publisher": {"@id": ORG_ID},
+                          "about": {"@id": absu(path) + "#work"}})
+        vids = ('\n<section class="block alt" style="padding-top:44px"><div class="wrap">'
+                f'\n  <h2 class="pv-h">{u["videos"]}</h2>\n  <div class="pv-grid">{cards}</div>\n</div></section>')
     prev_p, next_p = PROJECTS[i - 1], PROJECTS[(i + 1) % len(PROJECTS)]
     meta = ([f'<span class="yr">{p["year"][L]}</span>'] if p["year"][L] else []) + [f"<span>{t}</span>" for t in d["tags"]]
     body = page_hero(L, PROJECTS_PAGE[L]["kk"], d["title"], [d["short"]],
@@ -585,8 +600,8 @@ def build_project(p, i, L):
       <div class="pp-box"><h2>{u["key_facts"]}</h2><table class="pp-facts">{facts}</table></div>
     </div>
   </div>
-</div></section>
-<section class="block" style="padding-top:10px"><div class="wrap">
+</div></section>{vids}
+<section class="block" style="padding-top:{"44px" if vids else "10px"}"><div class="wrap">
   <div class="pp-cta reveal"><div><h2>{u["similar"]}</h2><p>{u["similar_p"]}</p></div>
     <div class="btns"><a class="btn btn-gold" href="#contact">{u["start"]}</a><a class="btn btn-ghost" href="{url(svc["slug"], L)}" data-service="{svc["slug"]}" data-place="project-cta">{svc[L]["nav"]}</a></div></div>
   <div class="pp-nav">

@@ -319,6 +319,12 @@ html[lang=fa] .step::before{content:counter(st, persian);}
 .pp-nav a:hover{border-color:var(--accent);}
 .pp-nav a small{display:block; color:var(--muted); font-size:12px;}
 
+/* project videos */
+.pv-h{font-size:22px; font-weight:800; margin-bottom:18px;}
+.pv-grid{display:grid; grid-template-columns:2fr 1fr; gap:22px; align-items:start;}
+.pv-grid .m-card:only-child{grid-column:1 / -1; max-width:860px;}
+@media(max-width:860px){ .pv-grid{grid-template-columns:1fr;} .pv-grid .m-card.v{max-width:360px; width:100%; margin:0 auto;} }
+
 /* lightbox */
 .m-lb{position:fixed; inset:0; z-index:210; background:rgba(12,13,16,.94); display:none; align-items:center; justify-content:center; padding:56px 64px;}
 .m-lb.show{display:flex;}
