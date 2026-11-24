@@ -5,7 +5,7 @@
 """
 
 # ---------------------------------------------------------------- تنظیمات
-BASE = "https://entehagroup.ir"          # آدرس سایت، بدون / در آخر
+BASE = "https://entehagroup.github.io"          # آدرس سایت، بدون / در آخر
 GA_ID = ""                               # شناسه‌ی گوگل آنالیتیکس (مثل G-XXXXXXX)؛ خالی = بدون آنالیتیکس
 FORMSPREE = "https://formspree.io/f/mrevzvga"
 PHONE = "+989962233898"

@@ -16,4 +16,4 @@ User-agent: Bingbot
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://entehagroup.ir/sitemap.xml
+Sitemap: https://entehagroup.github.io/sitemap.xml

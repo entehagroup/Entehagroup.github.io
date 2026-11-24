@@ -743,8 +743,6 @@ def build_extras():
            f"- Contact form: {absu(url('index', E))}#contact", "", "## Optional", "",
            f"- [Company resume (English, PDF)]({BASE}/{RESUME['en']})", f"- [رزومه‌ی گروه (فارسی، PDF)]({BASE}/{RESUME['fa']})", ""]
     open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write("\n".join(L_))
-    # CNAME
-    open(os.path.join(ROOT, "CNAME"), "w").write(BASE.split("://")[1] + "\n")
 
 
 def build_og_images():
@@ -783,10 +781,10 @@ def check():
             if not os.path.exists(os.path.join(ROOT, ref.lstrip("/"))): problems.append(f"{pth}: missing file {ref}")
         for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
             json.loads(m)
-        if "github.io" in s.replace("entehagroup.github.io", "") or "entehagroup.github.io" in s:
-            problems.append(f"{pth}: old github.io address")
+        if "https://entehagroup.ir" in s:
+            problems.append(f"{pth}: old .ir address")
     for f in ("sitemap.xml", "robots.txt", "llms.txt"):
-        if "github.io" in open(os.path.join(ROOT, f), encoding="utf-8").read(): problems.append(f"{f}: old github.io address")
+        if "https://entehagroup.ir" in open(os.path.join(ROOT, f), encoding="utf-8").read(): problems.append(f"{f}: old .ir address")
     if problems:
         print("\n".join(problems)); sys.exit(1)
 

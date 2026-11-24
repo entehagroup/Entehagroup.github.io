@@ -6,7 +6,7 @@
 
 ## Key facts
 
-- Based in Tehran and Isfahan, Iran; serves clients across Iran. Website: https://entehagroup.ir/
+- Based in Tehran and Isfahan, Iran; serves clients across Iran. Website: https://entehagroup.github.io/
 - Core team: Hassan Nasiri Khonsari (Technical & Design Director), Alireza Pirhaji (Manufacturing & Quality Lead), Seyed Mostafa Banihashemi (Project & R&D Lead); degrees from Sharif University of Technology, IUST, K. N. Toosi University and Tarbiat Modares University; plus a network of partner workshops and specialists.
 - Scope: requirements, concept and detailed design, engineering analysis (FEA), fabrication, assembly, quality control and commissioning. The engineer who designs a machine also supervises its fabrication and assembly.
 - Track record: 80 postal sorting robots built for Iran Post (50 for Tehran, 30 for Kermanshah, 2020–2025), with a third-generation design produced as a 200-unit series; a 6-DOF knee prosthesis test rig to ASTM F1223, the first of its kind in Iran (2021); five industrial FDM 3D printers up to 500 × 500 × 400 mm (2020–2023); a fleet of seven waiter robots (2021); a dual-purpose CNC with a ~100 × 100 cm bed (2023).
@@ -21,49 +21,49 @@
 
 ## Pages (English)
 
-- [Home](https://entehagroup.ir/): overview
-- [Services](https://entehagroup.ir/services.html): service lines, process and FAQ
-- [Custom special-purpose machines and industrial robots](https://entehagroup.ir/custom-machines.html): A machine built for your process — from requirements and concept design to fabrication, assembly and commissioning.
-- [Production line automation and control system design](https://entehagroup.ir/automation.html): Automating the manual and semi-automatic steps of your line: control design, PLC programming, HMI and integration with existing equipment.
-- [Industrial parts made to your drawings — one-off or in series](https://entehagroup.ir/parts-manufacturing.html): Parts and assemblies made to your drawings, one-off or in series, with our own quality control before delivery.
-- [Projects](https://entehagroup.ir/projects.html): all projects
-- [About](https://entehagroup.ir/about.html): team, honors, publications, skills, experience
+- [Home](https://entehagroup.github.io/): overview
+- [Services](https://entehagroup.github.io/services.html): service lines, process and FAQ
+- [Custom special-purpose machines and industrial robots](https://entehagroup.github.io/custom-machines.html): A machine built for your process — from requirements and concept design to fabrication, assembly and commissioning.
+- [Production line automation and control system design](https://entehagroup.github.io/automation.html): Automating the manual and semi-automatic steps of your line: control design, PLC programming, HMI and integration with existing equipment.
+- [Industrial parts made to your drawings — one-off or in series](https://entehagroup.github.io/parts-manufacturing.html): Parts and assemblies made to your drawings, one-off or in series, with our own quality control before delivery.
+- [Projects](https://entehagroup.github.io/projects.html): all projects
+- [About](https://entehagroup.github.io/about.html): team, honors, publications, skills, experience
 
 ## Projects
 
-- [Postal sorting robots](https://entehagroup.ir/projects/postal-sorting-robots.html): 80 autonomous parcel-sorting robots built for Iran Post; the third-generation design went into production as a 200-unit series.
-- [Knee prosthesis constraint & stability test rig](https://entehagroup.ir/projects/knee-prosthesis-test-rig.html): A six-degree-of-freedom test rig for total knee prostheses to ASTM F1223 — the first of its kind in Iran.
-- [CNC spinning of kettle bodies](https://entehagroup.ir/projects/cnc-kettle-spinning.html): Step-by-step forming toolpaths designed in SolidCAM and tested on the workshop's CNC machine, to automate kettle-body forming that used to be done by hand.
-- [DMD powder feeder](https://entehagroup.ir/projects/dmd-powder-feeder.html): A powder feeder for laser direct metal deposition, controlling the feed rate between 1 and 100 g/min.
-- [Industrial FDM 3D printers](https://entehagroup.ir/projects/industrial-3d-printers.html): Five FDM printers designed and built from scratch, up to an industrial machine with a 500 × 500 × 400 mm build volume.
-- [Rail-guided platform over a test pool](https://entehagroup.ir/projects/rail-guided-test-platform.html): A rail-guided platform and cabin over a water-treatment test pool: structural design, fabrication and on-site installation.
-- [Cable-driven rehabilitation robot](https://entehagroup.ir/projects/cable-rehabilitation-robot.html): A cable-driven robot to improve postural alignment in children with cerebral palsy: design, fabrication and control.
-- [Waiter robots](https://entehagroup.ir/projects/waiter-robots.html): A fleet of seven food delivery and serving robots that stay stable on uneven restaurant floors.
-- [Dual-purpose industrial CNC](https://entehagroup.ir/projects/dual-purpose-cnc.html): A modular CNC with a bed of about 100 × 100 cm for wood and light metals that becomes a 3D printer with a head swap.
-- [Dental aligners & veneers](https://entehagroup.ir/projects/dental-aligners.html): Orthodontic aligners and removable dental veneers produced by resin (DLP) 3D printing.
-- [Conveyor-belt FDM 3D printer](https://entehagroup.ir/projects/conveyor-3d-printer.html): An FDM printer with a conveyor-belt bed for continuous printing of long parts and batches.
-- [Plastic injection mould](https://entehagroup.ir/projects/injection-mould.html): Design and machining of a plastic injection mould.
-- [Jet engine cutaway model](https://entehagroup.ir/projects/jet-engine-model.html): A 3D-printed cutaway model of a jet engine for display and teaching.
-- [Cable-driven drawing robot](https://entehagroup.ir/projects/cable-drawing-robot.html): A cable-driven drawing robot that turns any photo into a line drawing and draws it on canvas.
+- [Postal sorting robots](https://entehagroup.github.io/projects/postal-sorting-robots.html): 80 autonomous parcel-sorting robots built for Iran Post; the third-generation design went into production as a 200-unit series.
+- [Knee prosthesis constraint & stability test rig](https://entehagroup.github.io/projects/knee-prosthesis-test-rig.html): A six-degree-of-freedom test rig for total knee prostheses to ASTM F1223 — the first of its kind in Iran.
+- [CNC spinning of kettle bodies](https://entehagroup.github.io/projects/cnc-kettle-spinning.html): Step-by-step forming toolpaths designed in SolidCAM and tested on the workshop's CNC machine, to automate kettle-body forming that used to be done by hand.
+- [DMD powder feeder](https://entehagroup.github.io/projects/dmd-powder-feeder.html): A powder feeder for laser direct metal deposition, controlling the feed rate between 1 and 100 g/min.
+- [Industrial FDM 3D printers](https://entehagroup.github.io/projects/industrial-3d-printers.html): Five FDM printers designed and built from scratch, up to an industrial machine with a 500 × 500 × 400 mm build volume.
+- [Rail-guided platform over a test pool](https://entehagroup.github.io/projects/rail-guided-test-platform.html): A rail-guided platform and cabin over a water-treatment test pool: structural design, fabrication and on-site installation.
+- [Cable-driven rehabilitation robot](https://entehagroup.github.io/projects/cable-rehabilitation-robot.html): A cable-driven robot to improve postural alignment in children with cerebral palsy: design, fabrication and control.
+- [Waiter robots](https://entehagroup.github.io/projects/waiter-robots.html): A fleet of seven food delivery and serving robots that stay stable on uneven restaurant floors.
+- [Dual-purpose industrial CNC](https://entehagroup.github.io/projects/dual-purpose-cnc.html): A modular CNC with a bed of about 100 × 100 cm for wood and light metals that becomes a 3D printer with a head swap.
+- [Dental aligners & veneers](https://entehagroup.github.io/projects/dental-aligners.html): Orthodontic aligners and removable dental veneers produced by resin (DLP) 3D printing.
+- [Conveyor-belt FDM 3D printer](https://entehagroup.github.io/projects/conveyor-3d-printer.html): An FDM printer with a conveyor-belt bed for continuous printing of long parts and batches.
+- [Plastic injection mould](https://entehagroup.github.io/projects/injection-mould.html): Design and machining of a plastic injection mould.
+- [Jet engine cutaway model](https://entehagroup.github.io/projects/jet-engine-model.html): A 3D-printed cutaway model of a jet engine for display and teaching.
+- [Cable-driven drawing robot](https://entehagroup.github.io/projects/cable-drawing-robot.html): A cable-driven drawing robot that turns any photo into a line drawing and draws it on canvas.
 
 ## صفحه‌ها (فارسی)
 
-- [صفحه‌ی اصلی](https://entehagroup.ir/fa/)
-- [خدمات](https://entehagroup.ir/fa/services.html)
-- [طراحی و ساخت دستگاه خاص‌منظوره و ربات صنعتی سفارشی](https://entehagroup.ir/fa/custom-machines.html)
-- [اتوماسیون خط تولید و طراحی سیستم کنترل](https://entehagroup.ir/fa/automation.html)
-- [ساخت قطعات صنعتی طبق نقشه، تک‌نمونه و تیراژی](https://entehagroup.ir/fa/parts-manufacturing.html)
-- [نمونه‌کارها](https://entehagroup.ir/fa/projects.html)
-- [درباره و تیم](https://entehagroup.ir/fa/about.html)
+- [صفحه‌ی اصلی](https://entehagroup.github.io/fa/)
+- [خدمات](https://entehagroup.github.io/fa/services.html)
+- [طراحی و ساخت دستگاه خاص‌منظوره و ربات صنعتی سفارشی](https://entehagroup.github.io/fa/custom-machines.html)
+- [اتوماسیون خط تولید و طراحی سیستم کنترل](https://entehagroup.github.io/fa/automation.html)
+- [ساخت قطعات صنعتی طبق نقشه، تک‌نمونه و تیراژی](https://entehagroup.github.io/fa/parts-manufacturing.html)
+- [نمونه‌کارها](https://entehagroup.github.io/fa/projects.html)
+- [درباره و تیم](https://entehagroup.github.io/fa/about.html)
 
 ## Contact
 
 - Phone: +98 996 223 3898
 - Email: Nasiri2752@Gmail.com
 - Instagram: https://www.instagram.com/enteha.eng/
-- Contact form: https://entehagroup.ir/#contact
+- Contact form: https://entehagroup.github.io/#contact
 
 ## Optional
 
-- [Company resume (English, PDF)](https://entehagroup.ir/enteha-resume-en-v1.4.pdf)
-- [رزومه‌ی گروه (فارسی، PDF)](https://entehagroup.ir/enteha-resume-fa-v1.4.pdf)
+- [Company resume (English, PDF)](https://entehagroup.github.io/enteha-resume-en-v1.4.pdf)
+- [رزومه‌ی گروه (فارسی، PDF)](https://entehagroup.github.io/enteha-resume-fa-v1.4.pdf)

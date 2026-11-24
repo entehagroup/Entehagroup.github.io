@@ -1,4 +1,4 @@
-# Enteha Group website — https://entehagroup.ir
+# Enteha Group website — https://entehagroup.github.io
 
 Static bilingual site for GitHub Pages: English at the root, Persian under `/fa/`.
 
@@ -10,11 +10,7 @@ See `site-src/README.md` (in Persian) for how to change text, add a project or a
 Analytics, and the domain/DNS setup.
 
 ## Domain
-The site is served at `https://entehagroup.ir` (`CNAME` in the root). DNS is on Cloudflare:
-four A records for `@` (185.199.108.153, .109, .110, .111) and a CNAME `www` → `entehagroup.github.io`,
-all **DNS only** (grey cloud; with the proxy on, GitHub cannot issue the HTTPS certificate).
-GitHub redirects `entehagroup.github.io` to the domain page by page. To go back to the github.io
-address, remove the domain in Settings → Pages.
+The canonical site is served at `https://entehagroup.github.io`. Keep the GitHub Pages custom domain empty. Redirect requests for `entehagroup.ir` to the corresponding Pages URL in Cloudflare.
 
 ## Contact form
 Uses Formspree (`FORMSPREE` in `site-src/content_site.py`); messages arrive with the subject
