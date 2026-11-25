@@ -76,6 +76,21 @@ CONTACT = {
         "err": "Sending failed. Please try again or use email.", "net": "Sending failed. Please check your connection."},
 }
 
+QUOTE_BRIEF = {
+ "custom-machines": {
+  "fa": "برای برآورد طراحی و ساخت دستگاه، بگویید دستگاه چه کاری باید انجام دهد، قطعه یا محصول چه ابعادی دارد، ظرفیت هدف چقدر است و چه محدودیت‌هایی در نصب یا اتصال به تجهیزات فعلی دارید. اگر پروژه از نمونه‌سازی شروع می‌شود، معیار قبولی نمونه و تعداد دستگاه در مرحله‌های بعد را هم بنویسید.",
+  "en": "For a machine design and build quote, tell us what the machine should do, the size of the part or product, the target throughput, and any constraints on installation or connection to existing equipment. If the project starts with a prototype, include the acceptance criteria and expected quantities for later stages.",
+ },
+ "automation": {
+  "fa": "برای برآورد اتوماسیون، مرحله‌ای را که کندی یا خطا در آن رخ می‌دهد مشخص کنید. ظرفیت فعلی، ظرفیت هدف، تجهیزات و کنترلر موجود و مدت توقف مجاز خط را بنویسید. اگر هدف کاهش ضایعات یا کار دستی است، مقدار فعلی را هم در صورت دسترسی اعلام کنید.",
+  "en": "For an automation quote, describe the stage where delays or errors occur. Include current and target throughput, existing equipment and controllers, and allowable downtime. If the goal is to reduce scrap or manual work, share the current figures when available.",
+ },
+ "parts-manufacturing": {
+  "fa": "برای برآورد ساخت قطعه، تعداد نمونه یا سفارش اول، تیراژ هر نوبت و زمان تحویل را بنویسید. در صورت مشخص بودن، جنس، عملیات سطحی، تلرانس‌های حیاتی و معیار بازرسی را هم ذکر کنید. می‌توانید نقشه، مدل یا عکس نمونه را از راه ایمیل پایین صفحه بفرستید.",
+  "en": "For a manufacturing quote, list the prototype or first-order quantity, repeat batch size, and delivery date. Include material, finish, critical tolerances, and inspection criteria where known. You can send drawings, models or sample photos to the email address below.",
+ },
+}
+
 # ---------------------------------------------------------------- صفحه‌ی اصلی
 HOME = {
  "fa": {

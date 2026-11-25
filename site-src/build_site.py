@@ -203,12 +203,13 @@ def nav(L, active, alt_path):
 """
 
 
-def contact_section(L, source):
+def contact_section(L, source, brief=""):
     c = CONTACT[L]
     ext = ' target="_blank" rel="noopener"'
+    brief_html = f"\n  <p>{esc(brief)}</p>" if brief else ""
     return f"""<section class="block contact" id="contact"><div class="wrap">
   <h2 class="reveal">{c["h"]}</h2>
-  <p class="reveal">{c["p"]}</p>
+  <p class="reveal">{c["p"]}</p>{brief_html}
   <form class="cform reveal" id="contactForm" action="{FORMSPREE}" method="POST">
     <input type="hidden" name="_subject" value="Enteha Group website — new message">
     <input type="hidden" name="source" value="{absu(source)}">
@@ -429,7 +430,8 @@ def build_services(L):
     why = "".join(f"<li>{w}</li>" for w in WHY[L]["why_list"])
     inds = "".join(f"<li>{x}</li>" for x in WHY[L]["industry_list"])
     faq = "".join(f'<details class="reveal"><summary>{q}</summary><p>{a}</p></details>' for q, a in FAQ[L])
-    body = page_hero(L, s["kk"], s["h1"], [s["lead"]], crumbs=[(u["home"], url("index", L)), (s["kk"], None)]) + f"""
+    btns = f'<div class="btns"><a class="btn btn-gold" href="#contact">{u["start"]}</a></div>'
+    body = page_hero(L, s["kk"], s["h1"], [s["lead"]], crumbs=[(u["home"], url("index", L)), (s["kk"], None)], btns=btns) + f"""
 <section class="block alt" id="lines"><div class="wrap">
   {head_block(s["kk"], s["svc_h"])}
   <div class="svc-grid">{svcs}</div>
@@ -521,7 +523,8 @@ def build_service(s, L):
 </div></section>
 </div>
 """
-    write(path, head(L, d["title"], d["desc"], path, alt, nodes, og_img=f"/og/service-{slug}.jpg") + nav(L, "services", alt) + body + contact_section(L, path) + footer(L))
+    brief = QUOTE_BRIEF.get(slug, {}).get(L, "")
+    write(path, head(L, d["title"], d["desc"], path, alt, nodes, og_img=f"/og/service-{slug}.jpg") + nav(L, "services", alt) + body + contact_section(L, path, brief) + footer(L))
 
 
 # ---------------------------------------------------------------- نمونه‌کارها
@@ -697,12 +700,11 @@ def build_extras():
     for pth in PAGES:
         if pth.startswith("/fa/"): fa_p, en_p = pth, (pth[3:] or "/")
         else: en_p, fa_p = pth, "/fa" + pth
-        pri = "1.0" if pth in ("/", "/fa/") else ("0.9" if any(x in pth for x in ("services", "projects.html")) or pth.split("/")[-1][:-5] in SVC else "0.8")
-        rows.append(f'  <url><loc>{absu(pth)}</loc><lastmod>{TODAY.isoformat()}</lastmod><priority>{pri}</priority>\n'
+        rows.append(f'  <url><loc>{absu(pth)}</loc>\n'
                     f'    <xhtml:link rel="alternate" hreflang="en" href="{absu(en_p)}"/><xhtml:link rel="alternate" hreflang="fa" href="{absu(fa_p)}"/>'
                     f'<xhtml:link rel="alternate" hreflang="x-default" href="{absu(en_p)}"/></url>')
     for f in RESUME.values():
-        rows.append(f"  <url><loc>{BASE}/{f}</loc><priority>0.5</priority></url>")
+        rows.append(f"  <url><loc>{BASE}/{f}</loc></url>")
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
         + "\n".join(rows) + "\n</urlset>\n")
