@@ -1648,6 +1648,23 @@ PROJECTS = [
  },
 ]
 
+HONOR_PHOTO = {
+ "en": {
+  "title": "Hassan Nasiri Khonsari’s awards",
+  "alt": "Alborz Elite Prize trophy, Sharif University of Technology silver medal, and 24th Khwarizmi Youth Festival trophy",
+  "caption": "For the {project}, he received the Alborz Elite Prize and placed second at the 24th Khwarizmi Youth Festival. Sharif University of Technology also awarded him the silver medal shown here.",
+  "project": "knee prosthesis test rig",
+  "view": "View larger photo",
+ },
+ "fa": {
+  "title": "جوایز حسن نصیری خونساری",
+  "alt": "تندیس جایزه‌ی البرز نخبگانی، مدال نقره‌ی دانشگاه صنعتی شریف و تندیس بیست‌وچهارمین جشنواره‌ی جوان خوارزمی",
+  "caption": "برای {project}، برگزیده‌ی جایزه‌ی البرز نخبگانی شد و مقام دوم بیست‌وچهارمین جشنواره‌ی جوان خوارزمی را به دست آورد. دانشگاه صنعتی شریف نیز این مدال نقره را به او اهدا کرد.",
+  "project": "دستگاه تست تقید و پایداری پروتز زانو",
+  "view": "مشاهده‌ی عکس در اندازه‌ی بزرگ‌تر",
+ },
+}
+
 # افتخارات: top=True یعنی در صفحه‌ی اصلی هم نمایش داده شود. [عنوان، توضیح]
 HONORS = [
  {

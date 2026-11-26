@@ -70,6 +70,7 @@ def person_node(k, L):
     return {"@type": "Person", "@id": BASE + "/#" + {"h": "hassan", "a": "alireza", "m": "mostafa"}[k],
             "name": p["name"]["en"], "alternateName": p["name"]["fa"], "jobTitle": plain(p["role"][L]),
             "description": plain(p["bio"][L]), "image": BASE + "/" + p["por"], "sameAs": [p["linkedin"]],
+            "award": [plain(h[L][0]) for h in HONORS if k in h["who"]],
             "worksFor": {"@id": ORG_ID}}
 
 
@@ -90,7 +91,6 @@ def org_full(L):
                        "Welded structures", "Plastic injection moulds", "Reverse engineering", "3D printing", "Medical robotics",
                        "طراحی و ساخت دستگاه خاص‌منظوره", "ربات صنعتی", "اتوماسیون خط تولید", "ساخت قطعات صنعتی"],
         "member": [person_node(k, L) for k in ("h", "a", "m")],
-        "award": [plain(h["en"][0]) for h in HONORS],
         "hasOfferCatalog": {"@type": "OfferCatalog", "name": UI[L]["nav"][0][1], "itemListElement": [
             {"@type": "Offer", "itemOffered": {"@type": "Service", "@id": absu(url(s["slug"], L)) + "#service",
                                                "name": plain(s[L]["h1"]), "url": absu(url(s["slug"], L))}} for s in SERVICES]},
@@ -320,6 +320,23 @@ def honor_card(h, L):
             f'<div class="ico">{svg(ICON[h["icon"]], 23)}</div><h3>{t}</h3><p>{p}</p></div>')
 
 
+def honor_photo(L):
+    d = HONOR_PHOTO[L]
+    img = "/assets/hassan-nasiri-khonsari-awards"
+    project = (f'<a href="{url("project", L, "knee-prosthesis-test-rig")}" '
+               f'data-project="knee-prosthesis-test-rig" data-place="honors">{esc(d["project"])}</a>')
+    return f"""<figure class="honor-photo">
+  <img src="{img}-960.webp" srcset="{img}-480.webp 480w, {img}-960.webp 960w, {img}-1920.webp 1920w"
+       sizes="(max-width: 720px) calc(100vw - 74px), (max-width: 1080px) calc(60vw - 64px), 584px"
+       width="960" height="540" loading="lazy" decoding="async" alt="{esc(d["alt"])}">
+  <figcaption>
+    <h3>{esc(d["title"])}</h3>
+    <p>{esc(d["caption"]).format(project=project)}</p>
+    <a class="honor-photo-view" href="{img}-1920.webp">{esc(d["view"])}</a>
+  </figcaption>
+</figure>"""
+
+
 def clip_card(c, L):
     d = c[L]
     return (f'<article class="m-card"><div class="m-vid v"><video controls playsinline preload="none" poster="/{c["poster"]}" data-id="{c["slug"]}" '
@@ -408,6 +425,7 @@ def build_home(L):
 </div></section>
 <section class="block" id="honors"><div class="wrap">
   {head_block(h["hon_kk"], h["hon_h"], h["hon_p"])}
+  {honor_photo(L)}
   <div class="h-grid">{hons}</div>
   {more(L, url("about", L) + "#honors", u["all_honors"])}
 </div></section>
@@ -644,6 +662,7 @@ def build_about(L):
 </div></section>
 <section class="block" id="honors"><div class="wrap">
   {head_block(HOME[L]["hon_kk"], a["hon_h"], HOME[L]["hon_p"])}
+  {honor_photo(L)}
   <div class="h-grid">{hons}</div>
 </div></section>
 <section class="block alt" id="publications"><div class="wrap">
@@ -730,7 +749,7 @@ def build_extras():
           "- Parts: CNC machining, laser cutting, bending and rolling, welded structures in steel and 316 stainless, pressure vessels and enclosures, plastic injection moulds, dimensional and weld inspection (GD&T), reverse engineering; drawings accepted in any format.",
           "- Support: faults in machines Enteha designed and built are fixed for 2 months after delivery; longer warranty, repairs and upgrades by contract.",
           "- Industries: medical and dental devices, postal and logistics, additive manufacturing, universities and research centres, service robotics.",
-          "- Awards: Laureate, 64th Alborz Elite Prize (2026); 2nd place, 26th Khwarizmi Youth Festival (2024); 2nd place, 24th Khwarizmi Youth Festival (2022); best design, 4th Iran Industrial Design Festival (2024); top startup, Sharif Science & Technology Park (2024).",
+          "- Member awards: Hassan Nasiri Khonsari received the 64th Alborz Elite Prize (2026) and took 2nd place at the 24th Khwarizmi Youth Festival (Iranian year 1401) for the knee prosthesis test rig. The postal sorting robots team earned 2nd place at the 26th Khwarizmi Youth Festival, best design at the 4th Iran Industrial Design Festival, and top startup at Sharif Science & Technology Park, all in 2024.",
           f"- Publication: “{PUB_MAIN['title']}”, Scientific Reports, 2025 ({PUB_MAIN['doi']}).", "",
           "## Pages (English)", "",
           f"- [Home]({absu(url('index', E))}): overview", f"- [Services]({absu(url('services', E))}): service lines, process and FAQ"]

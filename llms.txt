@@ -16,7 +16,7 @@
 - Parts: CNC machining, laser cutting, bending and rolling, welded structures in steel and 316 stainless, pressure vessels and enclosures, plastic injection moulds, dimensional and weld inspection (GD&T), reverse engineering; drawings accepted in any format.
 - Support: faults in machines Enteha designed and built are fixed for 2 months after delivery; longer warranty, repairs and upgrades by contract.
 - Industries: medical and dental devices, postal and logistics, additive manufacturing, universities and research centres, service robotics.
-- Awards: Laureate, 64th Alborz Elite Prize (2026); 2nd place, 26th Khwarizmi Youth Festival (2024); 2nd place, 24th Khwarizmi Youth Festival (2022); best design, 4th Iran Industrial Design Festival (2024); top startup, Sharif Science & Technology Park (2024).
+- Member awards: Hassan Nasiri Khonsari received the 64th Alborz Elite Prize (2026) and took 2nd place at the 24th Khwarizmi Youth Festival (Iranian year 1401) for the knee prosthesis test rig. The postal sorting robots team earned 2nd place at the 26th Khwarizmi Youth Festival, best design at the 4th Iran Industrial Design Festival, and top startup at Sharif Science & Technology Park, all in 2024.
 - Publication: “Frictional behavior between bone and additively manufactured Ti6Al4V implants is affected by bone density and surface texture under varying loads”, Scientific Reports, 2025 (https://doi.org/10.1038/s41598-025-25586-0).
 
 ## Pages (English)
