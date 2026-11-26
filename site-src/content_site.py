@@ -1650,16 +1650,16 @@ PROJECTS = [
 
 HONOR_PHOTO = {
  "en": {
-  "title": "Hassan Nasiri Khonsari’s awards",
+  "title": "Trophies and medals",
   "alt": "Alborz Elite Prize trophy, Sharif University of Technology silver medal, and 24th Khwarizmi Youth Festival trophy",
-  "caption": "For the {project}, he received the Alborz Elite Prize and placed second at the 24th Khwarizmi Youth Festival. Sharif University of Technology also awarded him the silver medal shown here.",
+  "caption": "Trophies from the Alborz Elite Prize and the 24th Khwarizmi Youth Festival for the {project}, alongside the Sharif University of Technology silver medal.",
   "project": "knee prosthesis test rig",
   "view": "View larger photo",
  },
  "fa": {
-  "title": "جوایز حسن نصیری خونساری",
+  "title": "تندیس‌ها و مدال‌ها",
   "alt": "تندیس جایزه‌ی البرز نخبگانی، مدال نقره‌ی دانشگاه صنعتی شریف و تندیس بیست‌وچهارمین جشنواره‌ی جوان خوارزمی",
-  "caption": "برای {project}، برگزیده‌ی جایزه‌ی البرز نخبگانی شد و مقام دوم بیست‌وچهارمین جشنواره‌ی جوان خوارزمی را به دست آورد. دانشگاه صنعتی شریف نیز این مدال نقره را به او اهدا کرد.",
+  "caption": "تندیس‌های جایزه‌ی البرز نخبگانی و بیست‌وچهارمین جشنواره‌ی جوان خوارزمی برای {project}، در کنار مدال نقره‌ی دانشگاه صنعتی شریف.",
   "project": "دستگاه تست تقید و پایداری پروتز زانو",
   "view": "مشاهده‌ی عکس در اندازه‌ی بزرگ‌تر",
  },
@@ -1673,11 +1673,11 @@ HONORS = [
   "who": ["h"],
   "fa": [
    "برگزیده‌ی شصت‌وچهارمین جایزه‌ی البرز نخبگانی",
-   "یکی از ۱۲ برگزیده‌ی بخش فناوران و مخترعان، برای دستگاه تست تقید و پایداری پروتز زانو؛ همراه با تقدیر دانشگاه صنعتی شریف و اهدای مدال نقره — ۱۴۰۵.",
+   "یکی از ۱۲ برگزیده‌ی بخش فناوران و مخترعان برای دستگاه تست تقید و پایداری پروتز زانو، همراه با تقدیر و اهدای مدال نقره از سوی دانشگاه صنعتی شریف در سال ۱۴۰۵.",
   ],
   "en": [
    "Laureate, 64th Alborz Elite Prize",
-   "One of 12 laureates in the Technologists & Inventors category, for the knee prosthesis constraint and stability test rig; with a commendation from Sharif University of Technology and a silver medal — 2026.",
+   "One of 12 laureates in the Technologists & Inventors category for the knee prosthesis constraint and stability test rig. Sharif University of Technology also presented a commendation and a silver medal in 2026.",
   ],
  },
  {
