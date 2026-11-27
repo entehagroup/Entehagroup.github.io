@@ -187,13 +187,13 @@ def head(L, title, desc, path, alt_path, nodes, og_img="/og-image.jpg", og_type=
 """
 
 
-def nav(L, active, alt_path):
+def nav(L, active, alt_path, contact_href="#contact"):
     u = UI[L]
     links = "".join(f'<a href="{url(p, L)}"{" class=\"active\" aria-current=\"page\"" if p == active else ""}>{t}</a>' for p, t in u["nav"])
     other = OTHER[L]
     return f"""<nav><div class="wrap">
   <a href="{url("index", L)}" class="brand"><img class="mk" src="/logo-96.webp" width="34" height="34" alt="{esc(u["logo_alt"])}">{NAME[L]}</a>
-  <div class="menu">{links}<a href="#contact" class="nav-cta">{u["contact"]}</a></div>
+  <div class="menu">{links}<a href="{contact_href}" class="nav-cta">{u["contact"]}</a></div>
   <div class="tools">
     <a class="lang" href="{alt_path}" hreflang="{other}" lang="{other}">{svg(ICON["globe"], 15)}{u["lang_label"]}</a>
     <a href="tel:{PHONE}" class="nav-phone" aria-label="{u["call"]}">{svg(ICON["phone"], 17)}</a>
@@ -709,7 +709,7 @@ def build_extras():
     u = UI["en"]
     open(os.path.join(ROOT, "404.html"), "w", encoding="utf-8").write(
         head("en", "Page not found | " + NAME["en"], "This page does not exist.", "/404.html", "/404.html", [org_ref()], robots="noindex")
-        + nav("en", None, "/fa/") + page_hero("en", "404", "Page not found", ["The page you are looking for does not exist. / این صفحه پیدا نشد."])
+        + nav("en", None, "/fa/", contact_href="/#contact") + page_hero("en", "404", "Page not found", ["The page you are looking for does not exist. / این صفحه پیدا نشد."])
         + '<section class="block"><div class="wrap"><div class="btns" style="justify-content:center">'
         + "".join(f'<a class="btn btn-gold" href="{h}">{t}</a>' for h, t in [
             ("/", "Home"), ("/services.html", "Services"), ("/projects.html", "Projects"), ("/fa/", "صفحه‌ی اصلی فارسی")])
